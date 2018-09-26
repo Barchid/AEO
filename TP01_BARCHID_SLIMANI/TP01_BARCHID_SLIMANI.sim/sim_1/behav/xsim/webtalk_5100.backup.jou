@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Tue Sep 18 18:26:21 2018
+# Process ID: 5100
+# Current directory: /home/l3/nowakowski/Desktop/TP01_BARCHID_SLIMANI/TP01_BARCHID_SLIMANI.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/l3/nowakowski/Desktop/TP01_BARCHID_SLIMANI/TP01_BARCHID_SLIMANI.sim/sim_1/behav/xsim/xsim.dir/add4_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/l3/nowakowski/Desktop/TP01_BARCHID_SLIMANI/TP01_BARCHID_SLIMANI.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/l3/nowakowski/Desktop/TP01_BARCHID_SLIMANI/TP01_BARCHID_SLIMANI.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/l3/nowakowski/Desktop/TP01_BARCHID_SLIMANI/TP01_BARCHID_SLIMANI.sim/sim_1/behav/xsim/xsim.dir/add4_behav/webtalk/xsim_webtalk.tcl -notrace
