@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TP05.srcs/sources_1/new/btnToCode.vhd" \
+"../../../../TP05.srcs/sources_1/new/btn_pulse.vhd" \
+"../../../../TP05.srcs/sources_1/new/clkdiv.vhd" \
+"../../../../TP05.srcs/sources_1/new/decode_sequence.vhd" \
+"../../../../TP05.srcs/sources_1/new/decoder.vhd" \
+
+# Do not sort compile order
+nosort

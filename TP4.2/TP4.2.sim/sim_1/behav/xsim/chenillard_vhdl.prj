@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TP4.2.srcs/sources_1/new/clk_div.vhd" \
+"../../../../TP4.2.srcs/sources_1/new/shift_vector.vhd" \
+"../../../../TP4.2.srcs/sources_1/new/chenillard.vhd" \
+
+# Do not sort compile order
+nosort
