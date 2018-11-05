@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date             : Tue Oct 16 18:48:10 2018
-| Host             : a14p3 running 64-bit Ubuntu 18.04.1 LTS
+| Date             : Mon Nov  5 16:15:10 2018
+| Host             : a10p25 running 64-bit Ubuntu 18.04.1 LTS
 | Command          : report_power -file decoder_power_routed.rpt -pb decoder_power_summary_routed.pb -rpx decoder_power_routed.rpx
 | Design           : decoder
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.073        |
+| Total On-Chip Power (W)  | 0.074        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.001        |
+| Dynamic (W)              | 0.002        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      109 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       26 |     20800 |            0.13 |
-|   CARRY4       |    <0.001 |       10 |      8150 |            0.12 |
-|   Register     |    <0.001 |       55 |     41600 |            0.13 |
+| Slice Logic    |    <0.001 |      213 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       63 |     20800 |            0.30 |
+|   CARRY4       |    <0.001 |       24 |      8150 |            0.29 |
+|   Register     |    <0.001 |       97 |     41600 |            0.23 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       16 |       --- |             --- |
-| Signals        |    <0.001 |       93 |       --- |             --- |
+|   Others       |     0.000 |       18 |       --- |             --- |
+| Signals        |    <0.001 |      191 |       --- |             --- |
 | I/O            |    <0.001 |       30 |       106 |           28.30 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.073 |          |           |                 |
+| Total          |     0.074 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |
+| Vccint    |       1.000 |     0.011 |       0.002 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -141,12 +141,15 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| decoder                              |     0.001 |
+| decoder                              |     0.002 |
 |   inst_btns_pulses[0].inst_btn_pulse |    <0.001 |
 |   inst_btns_pulses[1].inst_btn_pulse |    <0.001 |
 |   inst_btns_pulses[2].inst_btn_pulse |    <0.001 |
 |   inst_btns_pulses[3].inst_btn_pulse |    <0.001 |
 |   inst_btns_pulses[4].inst_btn_pulse |    <0.001 |
+|   inst_chenillard                    |    <0.001 |
+|     inst_clk_div                     |    <0.001 |
+|     inst_shift_vector                |    <0.001 |
 |   inst_clkdiv                        |    <0.001 |
 |   inst_decode_sequence               |    <0.001 |
 +--------------------------------------+-----------+

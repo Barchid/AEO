@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date         : Tue Oct 16 18:48:10 2018
-| Host         : a14p3 running 64-bit Ubuntu 18.04.1 LTS
+| Date         : Mon Nov  5 16:15:09 2018
+| Host         : a10p25 running 64-bit Ubuntu 18.04.1 LTS
 | Command      : report_methodology -file decoder_methodology_drc_routed.rpt -pb decoder_methodology_drc_routed.pb -rpx decoder_methodology_drc_routed.rpx
 | Design       : decoder
 | Device       : xc7a35tcpg236-1
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 35
+             Violations found: 52
 +-----------+----------+-----------------------------+------------+
 | Rule      | Severity | Description                 | Violations |
 +-----------+----------+-----------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell | 35         |
+| TIMING-17 | Warning  | Non-clocked sequential cell | 52         |
 +-----------+----------+-----------------------------+------------+
 
 2. REPORT DETAILS
@@ -184,25 +184,110 @@ Related violations: <none>
 
 TIMING-17#31 Warning
 Non-clocked sequential cell  
-The clock pin inst_decode_sequence/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Warning
 Non-clocked sequential cell  
-The clock pin inst_decode_sequence/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#33 Warning
 Non-clocked sequential cell  
-The clock pin inst_decode_sequence/FSM_sequential_state_reg[2]/C is not reached by a timing clock
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#34 Warning
 Non-clocked sequential cell  
-The clock pin inst_decode_sequence/led_reg[0]/C is not reached by a timing clock
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#35 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/temp_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Warning
+Non-clocked sequential cell  
+The clock pin inst_chenillard/inst_shift_vector/vDirection_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Warning
+Non-clocked sequential cell  
+The clock pin inst_decode_sequence/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Warning
+Non-clocked sequential cell  
+The clock pin inst_decode_sequence/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Warning
+Non-clocked sequential cell  
+The clock pin inst_decode_sequence/FSM_sequential_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Warning
+Non-clocked sequential cell  
+The clock pin inst_decode_sequence/led_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Warning
 Non-clocked sequential cell  
 The clock pin inst_decode_sequence/led_reg[1]/C is not reached by a timing clock
 Related violations: <none>

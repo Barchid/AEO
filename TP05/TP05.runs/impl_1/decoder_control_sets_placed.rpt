@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date         : Tue Oct 16 18:47:56 2018
-| Host         : a14p3 running 64-bit Ubuntu 18.04.1 LTS
+| Date         : Mon Nov  5 16:14:52 2018
+| Host         : a10p25 running 64-bit Ubuntu 18.04.1 LTS
 | Command      : report_control_sets -verbose -file decoder_control_sets_placed.rpt
 | Design       : decoder
 | Device       : xc7a35t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     4 |
-| Unused register locations in slices containing registers |    10 |
+| Number of unique control sets                            |     5 |
+| Unused register locations in slices containing registers |    14 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,8 +34,7 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      4 |            1 |
-|    16+ |            3 |
+|    16+ |            5 |
 +--------+--------------+
 
 
@@ -45,10 +44,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              76 |           11 |
+| No           | No                    | No                     |             116 |           18 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               4 |            1 |
-| Yes          | No                    | No                     |              30 |            5 |
+| No           | Yes                   | No                     |              48 |            6 |
+| Yes          | No                    | No                     |              30 |            4 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -57,13 +56,14 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+------------------+------------------------------------------+------------------+----------------+
-|  Clock Signal  |   Enable Signal  |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
-+----------------+------------------+------------------------------------------+------------------+----------------+
-|  clk190_BUFG   |                  | inst_btns_pulses[4].inst_btn_pulse/SR[0] |                1 |              4 |
-|  clk190_BUFG   | inst_clkdiv/E190 |                                          |                5 |             30 |
-|  clk190_BUFG   |                  |                                          |                5 |             36 |
-|  clk_IBUF_BUFG |                  |                                          |                6 |             40 |
-+----------------+------------------+------------------------------------------+------------------+----------------+
++-----------------------------------+------------------+------------------------------------+------------------+----------------+
+|            Clock Signal           |   Enable Signal  |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-----------------------------------+------------------+------------------------------------+------------------+----------------+
+|  clk190_BUFG                      | inst_clkdiv/E190 |                                    |                4 |             30 |
+|  inst_chenillard/inst_clk_div/CLK |                  |                                    |                6 |             34 |
+|  clk190_BUFG                      |                  |                                    |                5 |             40 |
+|  clk_IBUF_BUFG                    |                  |                                    |                7 |             42 |
+|  clk_IBUF_BUFG                    |                  | inst_chenillard/inst_clk_div/clear |                6 |             48 |
++-----------------------------------+------------------+------------------------------------+------------------+----------------+
 
 

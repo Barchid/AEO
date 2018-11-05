@@ -16,6 +16,8 @@ signal clk190: std_logic;
 signal E190: std_logic;
 signal pulses: std_logic_vector(4 downto 0);
 signal magic: std_logic;
+signal jpp: std_logic_vector(1 downto 0);
+signal chenille: std_logic_vector(15 downto 0);
 
 -- components
 component decode_sequence
@@ -52,6 +54,14 @@ component btn_pulse
    );
 end component;
 
+component chenillard
+    port (
+		sw : in std_logic_vector(15 downto 0);
+		clk : in STD_LOGIC;
+		led : out STD_LOGIC_VECTOR (15 downto 0)
+	);
+end component;
+
 begin
 
 inst_clkdiv : clkdiv port map(
@@ -81,10 +91,20 @@ inst_btnToCode: btnToCode port map (
 inst_decode_sequence: decode_sequence port map(
     reset => pulses(4),
     clk => clk190,
-    led => led(1 downto 0),
+    led => jpp,
     seq => sw(7 downto 0),
     code => code,
     magic => magic
 );
 
+inst_chenillard: chenillard port map (
+    sw => "0000000010000000",
+    clk => clk,
+    led => chenille
+);
+
+with jpp(1) select led <=
+    chenille when '1',
+    "00000000000000" & jpp when others;
+    
 end Behavioral;

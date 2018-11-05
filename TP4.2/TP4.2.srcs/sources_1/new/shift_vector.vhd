@@ -10,10 +10,8 @@ entity shift_vector is
 end shift_vector;
 
 architecture Behavioral of shift_vector is
-
 	signal temp : std_logic_vector(15 downto 0) := "0000000000000001";
 	signal sDirection : std_logic := '0';
-
 begin
 	process (clk)
 	variable tmp : std_logic;
@@ -25,9 +23,9 @@ begin
 			if temp(0) = '1' or temp(15) = '1' then
 				vDirection := not vDirection;
 			else
-					if sw(15 downto 0) and temp(15 downto 0) = temp then
-						vDirection := not vDirection;
-					end if;
+                if (sw(15 downto 0) and temp(15 downto 0)) = temp then
+                    vDirection := not vDirection;
+                end if;
 			end if;
 
 			if vDirection = '1' then
