@@ -34,7 +34,7 @@ end component;
 -- signals
 signal clk190 : std_logic;
 signal E190: std_logic;
-signal mot: std_logic_vector(3 downto 0);
+signal sevenseg: std_logic_vector(3 downto 0);
 begin
 
 inst_clkdiv: clkdiv port map (
@@ -49,12 +49,12 @@ inst_automate: automate port map(
     clk => clk190,
     e190 => E190,
     an => an,
-    data => mot,
+    data => sevenseg,
     reset => '0'
 );
 
 inst_x7seg: x7seg port map (
-    mot => mot,
+    mot => sevenseg,
     seg => seg
 );
 
