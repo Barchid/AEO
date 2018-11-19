@@ -1,0 +1,1287 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Nov 19 19:03:02 2018
+# Process ID: 14064
+# Current directory: C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1
+# Command line: vivado.exe -log Basys3V6.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3V6.tcl
+# Log file: C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1/Basys3V6.vds
+# Journal file: C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Basys3V6.tcl -notrace
+Command: synth_design -top Basys3V6 -part xc7a35tcpg236-1
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'timer' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'timer' (customized with software release 2018.1) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15448 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 401.828 ; gain = 98.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Basys3V6' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:42]
+INFO: [Synth 8-3491] module 'Wrapper_RAM' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd:28' bound to instance 'UART_Wrapper' of component 'Wrapper_RAM' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'Wrapper_RAM' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd:46]
+INFO: [Synth 8-3491] module 'uart_rx' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_rx.vhd:28' bound to instance 'Inst_uart_rx' of component 'uart_rx' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_rx.vhd:41]
+INFO: [Synth 8-3491] module 'mySR8CE' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mysr8ce.vhd:25' bound to instance 'buf8' of component 'mySR8CE' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_rx.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'mySR8CE' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mysr8ce.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'mySR8CE' (1#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mysr8ce.vhd:35]
+INFO: [Synth 8-3491] module 'pulse' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/pulse.vhd:32' bound to instance 'pulse_shift' of component 'pulse' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_rx.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'pulse' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/pulse.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'pulse' (2#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/pulse.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (3#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_rx.vhd:41]
+INFO: [Synth 8-3491] module 'pulse' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/pulse.vhd:32' bound to instance 'pulse_shift' of component 'pulse' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd:104]
+WARNING: [Synth 8-5640] Port 'clk' is missing in component declaration [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd:57]
+INFO: [Synth 8-3491] module 'uart_baudClock' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/BaudClk_adept.vhd:31' bound to instance 'uart_baudClock_inst' of component 'uart_baudClock' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'uart_baudClock' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/BaudClk_adept.vhd:43]
+	Parameter clock_rate bound to: 100000000 - type: integer 
+	Parameter baud_rate bound to: 9600 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_baudClock' (4#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/BaudClk_adept.vhd:43]
+INFO: [Synth 8-3491] module 'uart_dispatch' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_dispatch.vhd:36' bound to instance 'Inst_uart_dispatch' of component 'uart_dispatch' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'uart_dispatch' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_dispatch.vhd:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_dispatch.vhd:81]
+WARNING: [Synth 8-614] signal 'buf64' is read in the process but is not in the sensitivity list [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_dispatch.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'uart_dispatch' (5#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_dispatch.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Wrapper_RAM' (6#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd:46]
+INFO: [Synth 8-3491] module 'HMaster' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:32' bound to instance 'my_Master' of component 'HMaster' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'HMaster' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:56]
+INFO: [Synth 8-3491] module 'Inst_mem' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:36' bound to instance 'Inst_mem_Master' of component 'inst_mem' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:463]
+INFO: [Synth 8-638] synthesizing module 'Inst_mem' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:48]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'mem_bank_1bit' (7#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:39]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-3491] module 'mem_bank_1bit' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd:28' bound to instance 'bank' of component 'mem_bank_1bit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:183]
+INFO: [Synth 8-256] done synthesizing module 'Inst_mem' (8#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd:48]
+INFO: [Synth 8-3491] module 'add_gen' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/add_gen.vhd:35' bound to instance 'Inst_add_gen' of component 'add_gen' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:476]
+INFO: [Synth 8-638] synthesizing module 'add_gen' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/add_gen.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'add_gen' (9#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/add_gen.vhd:42]
+INFO: [Synth 8-3491] module 'reset_mem' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reset_mem.vhd:25' bound to instance 'rst_mem' of component 'reset_mem' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:484]
+INFO: [Synth 8-638] synthesizing module 'reset_mem' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reset_mem.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'reset_mem' (10#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reset_mem.vhd:31]
+INFO: [Synth 8-3491] module 'Hstack' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:26' bound to instance 'Stack_Master' of component 'Hstack' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:591]
+INFO: [Synth 8-638] synthesizing module 'Hstack' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:47]
+INFO: [Synth 8-3491] module 'constant32' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/constant32.vhd:34' bound to instance 'constlit' of component 'constant32' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'constant32' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/constant32.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'constant32' (11#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/constant32.vhd:39]
+INFO: [Synth 8-3491] module 'Mux4' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd:34' bound to instance 'muxi0' of component 'Mux4' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'Mux4' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Mux4' (12#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd:43]
+INFO: [Synth 8-3491] module 'Mux4' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd:34' bound to instance 'muxi1' of component 'Mux4' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:191]
+INFO: [Synth 8-3491] module 'Mux4' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd:34' bound to instance 'muxi2' of component 'Mux4' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:199]
+INFO: [Synth 8-3491] module 'Mux4' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd:34' bound to instance 'muxi3' of component 'Mux4' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:207]
+INFO: [Synth 8-3491] module 'Mux4' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd:34' bound to instance 'muxoutN' of component 'Mux4' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:215]
+INFO: [Synth 8-3491] module 'Mux4' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd:34' bound to instance 'muxoutN2' of component 'Mux4' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:223]
+INFO: [Synth 8-3491] module 'Mux4' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd:34' bound to instance 'muxOutOversized' of component 'Mux4' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:231]
+INFO: [Synth 8-3491] module 'Mux4' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd:34' bound to instance 'muxoutT' of component 'Mux4' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:239]
+INFO: [Synth 8-3491] module 'Mux2' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2.vhd:34' bound to instance 'muxR0' of component 'Mux2' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'Mux2' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Mux2' (13#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2.vhd:41]
+INFO: [Synth 8-3491] module 'Mux2' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2.vhd:34' bound to instance 'muxR1' of component 'Mux2' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:253]
+INFO: [Synth 8-3491] module 'Mux2' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2.vhd:34' bound to instance 'muxR2' of component 'Mux2' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:259]
+INFO: [Synth 8-3491] module 'Mux2' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2.vhd:34' bound to instance 'muxR3' of component 'Mux2' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:265]
+INFO: [Synth 8-3491] module 'predicat' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/predicat.vhd:34' bound to instance 'pred' of component 'predicat' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'predicat' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/predicat.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'predicat' (14#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/predicat.vhd:39]
+INFO: [Synth 8-3491] module 'Ram8' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Ram8.vhd:35' bound to instance 'ram0' of component 'Ram8' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'Ram8' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Ram8.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Ram8' (15#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Ram8.vhd:45]
+INFO: [Synth 8-3491] module 'Ram8' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Ram8.vhd:35' bound to instance 'ram1' of component 'Ram8' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:282]
+INFO: [Synth 8-3491] module 'Ram8' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Ram8.vhd:35' bound to instance 'ram2' of component 'Ram8' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:289]
+INFO: [Synth 8-3491] module 'Ram8' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Ram8.vhd:35' bound to instance 'ram3' of component 'Ram8' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:296]
+INFO: [Synth 8-3491] module 'QDE' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/qde.vhd:26' bound to instance 'R0' of component 'QDE' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'QDE' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/qde.vhd:38]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'QDE' (16#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/qde.vhd:38]
+INFO: [Synth 8-3491] module 'QDE' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/qde.vhd:26' bound to instance 'R1' of component 'QDE' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:309]
+INFO: [Synth 8-3491] module 'QDE' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/qde.vhd:26' bound to instance 'R2' of component 'QDE' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:315]
+INFO: [Synth 8-3491] module 'QDE' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/qde.vhd:26' bound to instance 'R3' of component 'QDE' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:321]
+INFO: [Synth 8-3491] module 'select_in' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/select_in0_save.vhd:36' bound to instance 'sel_in' of component 'select_in' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:327]
+INFO: [Synth 8-638] synthesizing module 'select_in' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/select_in0_save.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'select_in' (17#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/select_in0_save.vhd:60]
+INFO: [Synth 8-3491] module 'select_out' declared at 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/select_out.vhd:35' bound to instance 'sel_out' of component 'select_out' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:350]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'select_out' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/select_out.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'select_out' (18#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/select_out.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'next_count' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/next_count.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'next_count' (19#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/next_count.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Hstack' (20#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'HCU' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'rstack' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/returnstack.vhd:38]
+INFO: [Synth 8-5534] Detected attribute (* keep = "yes" *) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/returnstack.vhd:40]
+INFO: [Synth 8-5534] Detected attribute (* keep = "yes" *) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/returnstack.vhd:41]
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/returnstack.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'rstack' (21#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/returnstack.vhd:38]
+INFO: [Synth 8-226] default block is never used [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:229]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:189]
+WARNING: [Synth 8-6014] Unused sequential element orlocal_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:195]
+WARNING: [Synth 8-6014] Unused sequential element plus_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:207]
+WARNING: [Synth 8-6014] Unused sequential element plusret_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element ins_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:375]
+INFO: [Synth 8-4471] merging register 'stackpush_reg' into 'stpush_reg' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:152]
+INFO: [Synth 8-4471] merging register 'stackpop_reg' into 'stpop_reg' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:153]
+INFO: [Synth 8-4471] merging register 'write_adr_reg[31:0]' into 'wr_adr_reg[31:0]' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:370]
+INFO: [Synth 8-4471] merging register 'write_data_reg[47:0]' into 'wr_data_reg[47:0]' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:371]
+INFO: [Synth 8-4471] merging register 'kernel_reg' into 'kernel_state_reg' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:372]
+WARNING: [Synth 8-6014] Unused sequential element stackpush_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:152]
+WARNING: [Synth 8-6014] Unused sequential element stackpop_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:153]
+WARNING: [Synth 8-6014] Unused sequential element write_adr_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element write_data_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:371]
+WARNING: [Synth 8-6014] Unused sequential element kernel_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:372]
+INFO: [Synth 8-256] done synthesizing module 'HCU' (22#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd:66]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg0' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg.vhd:38]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg0' (23#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg.vhd:38]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg0__parameterized1' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg.vhd:38]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg0__parameterized1' (23#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg.vhd:38]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg0c' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd:37]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg0c' (24#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd:37]
+	Parameter Mycode bound to: 11'b00000000011 
+INFO: [Synth 8-638] synthesizing module 'IP_Led' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Led.vhd:33]
+	Parameter Mycode bound to: 11'b00000000011 
+INFO: [Synth 8-256] done synthesizing module 'IP_Led' (25#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Led.vhd:33]
+	Parameter Mycode bound to: 11'b00000000100 
+INFO: [Synth 8-638] synthesizing module 'IP_switch' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_switch.vhd:35]
+	Parameter Mycode bound to: 11'b00000000100 
+INFO: [Synth 8-256] done synthesizing module 'IP_switch' (26#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_switch.vhd:35]
+	Parameter Mycode bound to: 11'b00000000010 
+INFO: [Synth 8-638] synthesizing module 'IP_BufO' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPBufO.vhd:33]
+	Parameter Mycode bound to: 11'b00000000010 
+INFO: [Synth 8-256] done synthesizing module 'IP_BufO' (27#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPBufO.vhd:33]
+	Parameter Mycode bound to: 11'b10000000010 
+INFO: [Synth 8-638] synthesizing module 'IP_waitbt' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPwaitBT1.vhd:46]
+	Parameter Mycode bound to: 11'b10000000010 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg1c' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd:37]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg1c' (28#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd:37]
+WARNING: [Synth 8-614] signal 'btnout' is read in the process but is not in the sensitivity list [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPwaitBT1.vhd:123]
+WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPwaitBT1.vhd:139]
+INFO: [Synth 8-256] done synthesizing module 'IP_waitbt' (29#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPwaitBT1.vhd:46]
+	Parameter Mycode bound to: 6'b000001 
+INFO: [Synth 8-638] synthesizing module 'IP_Funit' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd:40]
+	Parameter Mycode bound to: 6'b000001 
+INFO: [Synth 8-256] done synthesizing module 'IP_Funit' (30#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd:40]
+	Parameter Mycode bound to: 8'b00000001 
+INFO: [Synth 8-638] synthesizing module 'IP_stack' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPstack.vhd:40]
+	Parameter Mycode bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'IP_stack' (31#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPstack.vhd:40]
+	Parameter Mycode bound to: 11'b00000000101 
+INFO: [Synth 8-638] synthesizing module 'IP_identity' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPidentity.vhd:39]
+	Parameter Mycode bound to: 11'b00000000101 
+INFO: [Synth 8-256] done synthesizing module 'IP_identity' (32#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPidentity.vhd:39]
+	Parameter Mycode bound to: 10'b0000000011 
+INFO: [Synth 8-638] synthesizing module 'IP_datastack' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_datastack.vhd:38]
+	Parameter Mycode bound to: 10'b0000000011 
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg0c__parameterized1' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd:37]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg0c__parameterized1' (32#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'dstack' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/dstack.vhd:39]
+INFO: [Synth 8-5534] Detected attribute (* keep = "yes" *) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/dstack.vhd:41]
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/dstack.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'dstack' (33#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/dstack.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'IP_datastack' (34#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_datastack.vhd:38]
+	Parameter Mycode bound to: 11'b00000000001 
+INFO: [Synth 8-638] synthesizing module 'IP_Tic' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPTic.vhd:39]
+	Parameter Mycode bound to: 11'b00000000001 
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg1c__parameterized1' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd:37]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg1c__parameterized1' (34#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'IP_Tic' (35#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPTic.vhd:39]
+	Parameter Mycode bound to: 11'b00000010100 
+INFO: [Synth 8-638] synthesizing module 'IP_mul16' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPmul16.vhd:45]
+	Parameter Mycode bound to: 11'b00000010100 
+INFO: [Synth 8-637] synthesizing blackbox instance 'my_mul16' of component 'multiply' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPmul16.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'IP_mul16' (36#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPmul16.vhd:45]
+WARNING: [Synth 8-3848] Net ort in module/entity HMaster does not have driver. [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'HMaster' (37#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'debounce4' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/debounce4.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'debounce4' (38#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/debounce4.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'timer' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-14064-DESKTOP-8AQBG2A/realtime/timer_stub.vhdl:14]
+INFO: [Synth 8-638] synthesizing module 'afficheur' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/afficheur.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'x7seg' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/x7seg.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'x7seg' (39#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/x7seg.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'afficheur' (40#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/afficheur.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'Enable190' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Enable190.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Enable190' (41#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Enable190.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'arbitre' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'arbitre' (42#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:58]
+INFO: [Synth 8-226] default block is never used [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:330]
+WARNING: [Synth 8-3848] Net it2 in module/entity Basys3V6 does not have driver. [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:191]
+INFO: [Synth 8-256] done synthesizing module 'Basys3V6' (43#1) [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:42]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[31]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[30]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[29]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[28]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[27]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[26]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[25]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[24]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[23]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[22]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[21]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[20]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[19]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[18]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[17]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[16]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[31]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[30]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[29]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[28]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[27]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[26]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[25]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[24]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[23]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[22]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[21]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[20]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[19]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[18]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[17]
+WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Nin[16]
+WARNING: [Synth 8-3331] design select_in has unconnected port count[7]
+WARNING: [Synth 8-3331] design select_in has unconnected port count[6]
+WARNING: [Synth 8-3331] design HMaster has unconnected port data_S
+WARNING: [Synth 8-3331] design HMaster has unconnected port wphase_S
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 469.059 ; gain = 165.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin HCU_Master:orwait to constant 0 [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:612]
+WARNING: [Synth 8-3295] tying undriven pin My_arbitre:it2 to constant 0 [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:274]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 469.059 ; gain = 165.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 469.059 ; gain = 165.738
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-14064-DESKTOP-8AQBG2A/timer/timer/timer_in_context.xdc] for cell 'clk_gen'
+Finished Parsing XDC File [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-14064-DESKTOP-8AQBG2A/timer/timer/timer_in_context.xdc] for cell 'clk_gen'
+Parsing XDC File [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-14064-DESKTOP-8AQBG2A/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/my_mul16'
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of [get_ports -no_traverse -quiet {A[0]}]'. [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-14064-DESKTOP-8AQBG2A/multiply/multiply/multiply_in_context.xdc:1]
+Finished Parsing XDC File [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-14064-DESKTOP-8AQBG2A/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/my_mul16'
+Parsing XDC File [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3V6_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Basys3V6_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 826.992 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 826.992 ; gain = 523.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 826.992 ; gain = 523.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for mclk. (constraint file  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-14064-DESKTOP-8AQBG2A/timer/timer/timer_in_context.xdc}, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mclk. (constraint file  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-14064-DESKTOP-8AQBG2A/timer/timer/timer_in_context.xdc}, line 5).
+Applied set_property DONT_TOUCH = true for clk_gen. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for my_Master/\Mmul16.Inst_IP_mul16 /my_mul16. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 826.992 ; gain = 523.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'uart_dispatch'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "predicat" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'etat_reg' in module 'HCU'
+INFO: [Synth 8-5544] ROM "inslocal" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inslocal" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "plus" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "plus" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "plus" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "plusret" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "BusLedld" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Tout0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BOld" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'IP_waitbt'
+INFO: [Synth 8-5544] ROM "Tout0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IPdone" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd:86]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd:77]
+INFO: [Synth 8-5546] ROM "actif" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Tout0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'arbitre'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "it_homade_i" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "it_homade_i" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "it_homade_i" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "it_homade_i" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "it_homade_i" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "it_homade_i" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  master |                              000 |                              000
+                     hmd |                              001 |                              001
+                   hmd64 |                              010 |                              010
+                   slave |                              011 |                              011
+                  shmd64 |                              100 |                              101
+                     fin |                              101 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'uart_dispatch'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             short_instr |                               00 |                               00
+               next_wait |                               01 |                               10
+              long_instr |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'etat_reg' using encoding 'sequential' in module 'HCU'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                starting |                              010 |                               01
+                  finish |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'IP_waitbt'
+WARNING: [Synth 8-327] inferring latch for variable 'digit_reg' [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/afficheur.vhd:52]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                    int1 |                             0001 |                             0001
+                    int2 |                             0010 |                             0010
+                    int3 |                             0011 |                             0011
+                    int4 |                             0100 |                             0100
+                    int5 |                             0101 |                             0101
+                    int6 |                             0110 |                             0110
+                    int7 |                             0111 |                             0111
+                  iSTATE |                             1000 |                             1111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'arbitre'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 826.992 ; gain = 523.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 10    
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 65    
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 10    
+	               16 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 50    
++---RAMs : 
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 68    
+	   8 Input     64 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 3     
+	   3 Input     48 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 28    
+	   3 Input     32 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 4     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   3 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 4     
+	   3 Input     11 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	  19 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	  22 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 13    
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	  16 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 38    
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Basys3V6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mySR8CE 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module pulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 11    
+Module uart_baudClock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module uart_dispatch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   8 Input     64 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+Module mem_bank_1bit 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module Inst_mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 2     
+Module reset_mem 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module Mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module predicat 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module QDE 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module select_in 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
+Module select_out 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module next_count 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module rstack 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---RAMs : 
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module HCU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 3     
+	   3 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 18    
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 4     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   3 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 4     
+	   3 Input     11 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 2     
+	  16 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   6 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 11    
+Module reg0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module reg0__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module reg0c 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module IP_Led 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module IP_switch 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module IP_BufO 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module reg1c 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module IP_waitbt 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+Module IP_Funit 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module IP_stack 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg0c__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module dstack 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module IP_datastack 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module reg1c__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module IP_Tic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module debounce4 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 3     
+Module x7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  19 Input      7 Bit        Muxes := 1     
+Module afficheur 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module Enable190 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
+Module arbitre 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  22 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "pred/predicat" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory
+INFO: [Synth 8-5546] ROM "actif" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Tout0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory
+INFO: [Synth 8-5546] ROM "Mled.Inst_IP_Led/BusLedld" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mswitch.Inst_IP_Switch/Tout0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mbufout.Inst_IPBufO/BOld" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element UART_Wrapper/uart_baudClock_inst/clk_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/BaudClk_adept.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element My_arbitre/ack1_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:78]
+WARNING: [Synth 8-6014] Unused sequential element My_arbitre/ack2_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:79]
+WARNING: [Synth 8-6014] Unused sequential element My_arbitre/ack3_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element My_arbitre/ack4_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:81]
+WARNING: [Synth 8-6014] Unused sequential element My_arbitre/ack5_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element My_arbitre/ack6_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:83]
+WARNING: [Synth 8-6014] Unused sequential element My_arbitre/ack7_reg was removed.  [C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:84]
+INFO: [Synth 8-5544] ROM "UART_Wrapper/Inst_uart_dispatch/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-3331] design select_in has unconnected port count[7]
+WARNING: [Synth 8-3331] design select_in has unconnected port count[6]
+WARNING: [Synth 8-3331] design HMaster has unconnected port data_S
+WARNING: [Synth 8-3331] design HMaster has unconnected port wphase_S
+INFO: [Synth 8-3886] merging instance 'My_arbitre/it_homade_reg[1]' (FDR) to 'My_arbitre/it_homade_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\My_arbitre/it_homade_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (update_counter/count_out_reg[7]) is unused and will be removed from module Hstack.
+WARNING: [Synth 8-3332] Sequential element (update_counter/count_out_reg[6]) is unused and will be removed from module Hstack.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[31]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[30]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[29]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[28]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[27]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[26]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[25]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[24]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[23]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[22]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[21]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[20]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[19]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[18]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[17]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[16]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[15]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[14]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[13]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_ret_reg[12]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[31]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[30]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[29]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[28]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[27]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[26]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[25]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[24]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[23]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[22]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[21]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[20]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[19]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[18]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[17]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[16]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[15]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[14]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[13]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (PC_adr_reg[12]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[15]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[10]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[9]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[8]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[7]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[6]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[5]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[4]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[3]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[2]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[1]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (inslocal_reg[0]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (wr_adr_reg[11]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (wr_adr_reg[10]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (wr_adr_reg[9]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (wr_adr_reg[8]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (wr_adr_reg[7]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (wr_adr_reg[6]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[12]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[11]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[10]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[9]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[8]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[7]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[6]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[5]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[4]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[3]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[2]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[1]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdcode_reg[0]) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (spmdtrig_reg) is unused and will be removed from module HCU.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[31]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[30]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[29]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[28]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[27]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[26]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[25]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[24]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[23]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[22]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[21]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[20]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[19]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[18]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[17]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (BufO_reg/q_reg[16]) is unused and will be removed from module HMaster.
+WARNING: [Synth 8-3332] Sequential element (D7seg_display/digit_reg[3]) is unused and will be removed from module Basys3V6.
+WARNING: [Synth 8-3332] Sequential element (D7seg_display/digit_reg[2]) is unused and will be removed from module Basys3V6.
+WARNING: [Synth 8-3332] Sequential element (D7seg_display/digit_reg[1]) is unused and will be removed from module Basys3V6.
+WARNING: [Synth 8-3332] Sequential element (D7seg_display/digit_reg[0]) is unused and will be removed from module Basys3V6.
+WARNING: [Synth 8-3332] Sequential element (My_arbitre/it_homade_reg[2]) is unused and will be removed from module Basys3V6.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:01 . Memory (MB): peak = 826.992 ; gain = 523.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name            | RTL Object                                         | Inference | Size (Depth x Width) | Primitives      | 
++-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
+|my_Master/Stack_Master | ram0/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram1/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram2/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram3/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/HCU_Master   | Inst_returnstack/RAM_reg                           | Implied   | 16 x 32              | RAM32M x 6      | 
+|my_Master              | Mdatastack.Inst_IPdataStack/Inst_datastack/RAM_reg | Implied   | 16 x 32              | RAM32M x 6      | 
++-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_gen/clk_out1' to pin 'clk_gen/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_gen/clk_out2' to pin 'clk_gen/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:15 . Memory (MB): peak = 826.992 ; gain = 523.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 854.051 ; gain = 550.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name            | RTL Object                                         | Inference | Size (Depth x Width) | Primitives      | 
++-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
+|my_Master/Stack_Master | ram0/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram1/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram2/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram3/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/HCU_Master   | Inst_returnstack/RAM_reg                           | Implied   | 16 x 32              | RAM32M x 6      | 
+|my_Master              | Mdatastack.Inst_IPdataStack/Inst_datastack/RAM_reg | Implied   | 16 x 32              | RAM32M x 6      | 
++-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 971.922 ; gain = 668.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop next_state_reg is being inverted and renamed to next_state_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:35 . Memory (MB): peak = 971.922 ; gain = 668.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:35 . Memory (MB): peak = 971.922 ; gain = 668.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:39 . Memory (MB): peak = 971.922 ; gain = 668.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:29 ; elapsed = 00:01:39 . Memory (MB): peak = 971.922 ; gain = 668.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 971.922 ; gain = 668.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 971.922 ; gain = 668.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |timer         |         1|
+|2     |multiply      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |multiply_bbox_0 |     1|
+|2     |timer_bbox_1    |     1|
+|3     |CARRY4          |    63|
+|4     |LUT1            |    46|
+|5     |LUT2            |   400|
+|6     |LUT3            |   181|
+|7     |LUT4            |  1286|
+|8     |LUT5            |   378|
+|9     |LUT6            |  5441|
+|10    |MUXF7           |   520|
+|11    |MUXF8           |   260|
+|12    |RAM16X1S        |   128|
+|13    |RAM32M          |     8|
+|14    |FDCE            |    15|
+|15    |FDRE            |  4671|
+|16    |FDSE            |    18|
+|17    |IBUF            |    22|
+|18    |OBUF            |    27|
++------+----------------+------+
+
+Report Instance Areas: 
++------+----------------------------------+----------------------+------+
+|      |Instance                          |Module                |Cells |
++------+----------------------------------+----------------------+------+
+|1     |top                               |                      | 13498|
+|2     |  D7seg_display                   |afficheur             |     8|
+|3     |  Inst_debounce4                  |debounce4             |    20|
+|4     |  My_E190                         |Enable190             |    32|
+|5     |  My_arbitre                      |arbitre               |    12|
+|6     |  UART_Wrapper                    |Wrapper_RAM           |   283|
+|7     |    Inst_uart_dispatch            |uart_dispatch         |   199|
+|8     |    Inst_uart_rx                  |uart_rx               |    41|
+|9     |      buf8                        |mySR8CE               |     8|
+|10    |      pulse_shift                 |pulse_74              |     4|
+|11    |    pulse_shift                   |pulse_73              |     9|
+|12    |    uart_baudClock_inst           |uart_baudClock        |    34|
+|13    |  my_Master                       |HMaster               | 13089|
+|14    |    BufLed_reg                    |reg0__parameterized1  |    16|
+|15    |    BufO_reg                      |reg0                  |    27|
+|16    |    BufSwitch_reg                 |reg0c                 |    16|
+|17    |    HCU_Master                    |HCU                   |  5636|
+|18    |      Inst_returnstack            |rstack                |    50|
+|19    |    Inst_add_gen                  |add_gen               |    96|
+|20    |    Inst_mem_Master               |Inst_mem              |  6056|
+|21    |      \multi_bank[0].bank         |mem_bank_1bit         |    93|
+|22    |      \multi_bank[10].bank        |mem_bank_1bit_10      |    93|
+|23    |      \multi_bank[11].bank        |mem_bank_1bit_11      |    93|
+|24    |      \multi_bank[12].bank        |mem_bank_1bit_12      |    93|
+|25    |      \multi_bank[13].bank        |mem_bank_1bit_13      |    93|
+|26    |      \multi_bank[14].bank        |mem_bank_1bit_14      |    93|
+|27    |      \multi_bank[15].bank        |mem_bank_1bit_15      |    95|
+|28    |      \multi_bank[16].bank        |mem_bank_1bit_16      |    93|
+|29    |      \multi_bank[17].bank        |mem_bank_1bit_17      |    95|
+|30    |      \multi_bank[18].bank        |mem_bank_1bit_18      |    95|
+|31    |      \multi_bank[19].bank        |mem_bank_1bit_19      |    93|
+|32    |      \multi_bank[1].bank         |mem_bank_1bit_20      |    93|
+|33    |      \multi_bank[20].bank        |mem_bank_1bit_21      |    93|
+|34    |      \multi_bank[21].bank        |mem_bank_1bit_22      |    93|
+|35    |      \multi_bank[22].bank        |mem_bank_1bit_23      |    94|
+|36    |      \multi_bank[23].bank        |mem_bank_1bit_24      |    93|
+|37    |      \multi_bank[24].bank        |mem_bank_1bit_25      |    93|
+|38    |      \multi_bank[25].bank        |mem_bank_1bit_26      |    94|
+|39    |      \multi_bank[26].bank        |mem_bank_1bit_27      |   101|
+|40    |      \multi_bank[27].bank        |mem_bank_1bit_28      |    97|
+|41    |      \multi_bank[28].bank        |mem_bank_1bit_29      |    93|
+|42    |      \multi_bank[29].bank        |mem_bank_1bit_30      |    98|
+|43    |      \multi_bank[2].bank         |mem_bank_1bit_31      |    93|
+|44    |      \multi_bank[30].bank        |mem_bank_1bit_32      |    93|
+|45    |      \multi_bank[31].bank        |mem_bank_1bit_33      |    93|
+|46    |      \multi_bank[32].bank        |mem_bank_1bit_34      |    94|
+|47    |      \multi_bank[33].bank        |mem_bank_1bit_35      |    93|
+|48    |      \multi_bank[34].bank        |mem_bank_1bit_36      |    95|
+|49    |      \multi_bank[35].bank        |mem_bank_1bit_37      |    93|
+|50    |      \multi_bank[36].bank        |mem_bank_1bit_38      |    93|
+|51    |      \multi_bank[37].bank        |mem_bank_1bit_39      |    93|
+|52    |      \multi_bank[38].bank        |mem_bank_1bit_40      |    93|
+|53    |      \multi_bank[39].bank        |mem_bank_1bit_41      |    93|
+|54    |      \multi_bank[3].bank         |mem_bank_1bit_42      |    93|
+|55    |      \multi_bank[40].bank        |mem_bank_1bit_43      |    93|
+|56    |      \multi_bank[41].bank        |mem_bank_1bit_44      |    93|
+|57    |      \multi_bank[42].bank        |mem_bank_1bit_45      |    93|
+|58    |      \multi_bank[43].bank        |mem_bank_1bit_46      |    93|
+|59    |      \multi_bank[44].bank        |mem_bank_1bit_47      |    93|
+|60    |      \multi_bank[45].bank        |mem_bank_1bit_48      |    93|
+|61    |      \multi_bank[46].bank        |mem_bank_1bit_49      |    94|
+|62    |      \multi_bank[47].bank        |mem_bank_1bit_50      |    93|
+|63    |      \multi_bank[48].bank        |mem_bank_1bit_51      |    96|
+|64    |      \multi_bank[49].bank        |mem_bank_1bit_52      |    93|
+|65    |      \multi_bank[4].bank         |mem_bank_1bit_53      |    94|
+|66    |      \multi_bank[50].bank        |mem_bank_1bit_54      |    96|
+|67    |      \multi_bank[51].bank        |mem_bank_1bit_55      |    94|
+|68    |      \multi_bank[52].bank        |mem_bank_1bit_56      |    96|
+|69    |      \multi_bank[53].bank        |mem_bank_1bit_57      |    97|
+|70    |      \multi_bank[54].bank        |mem_bank_1bit_58      |    96|
+|71    |      \multi_bank[55].bank        |mem_bank_1bit_59      |    97|
+|72    |      \multi_bank[56].bank        |mem_bank_1bit_60      |    94|
+|73    |      \multi_bank[57].bank        |mem_bank_1bit_61      |    96|
+|74    |      \multi_bank[58].bank        |mem_bank_1bit_62      |    93|
+|75    |      \multi_bank[59].bank        |mem_bank_1bit_63      |    93|
+|76    |      \multi_bank[5].bank         |mem_bank_1bit_64      |    93|
+|77    |      \multi_bank[60].bank        |mem_bank_1bit_65      |    97|
+|78    |      \multi_bank[61].bank        |mem_bank_1bit_66      |    93|
+|79    |      \multi_bank[62].bank        |mem_bank_1bit_67      |   129|
+|80    |      \multi_bank[63].bank        |mem_bank_1bit_68      |   101|
+|81    |      \multi_bank[6].bank         |mem_bank_1bit_69      |    93|
+|82    |      \multi_bank[7].bank         |mem_bank_1bit_70      |    93|
+|83    |      \multi_bank[8].bank         |mem_bank_1bit_71      |    93|
+|84    |      \multi_bank[9].bank         |mem_bank_1bit_72      |    94|
+|85    |    \MTic.Inst_IP_Tic             |IP_Tic                |    57|
+|86    |      Tic_count                   |reg1c__parameterized1 |    57|
+|87    |    \Mdatastack.Inst_IPdataStack  |IP_datastack          |    48|
+|88    |      DatastackTop_reg            |reg0c__parameterized1 |    32|
+|89    |      Inst_datastack              |dstack                |    16|
+|90    |    \Mmul16.Inst_IP_mul16         |IP_mul16              |    32|
+|91    |    \Mwaitbtn.Inst_IPwaitBt       |IP_waitbt             |    46|
+|92    |      BufO_reg                    |reg1c                 |    15|
+|93    |      pls0                        |pulse                 |     5|
+|94    |      pls1                        |pulse_6               |     5|
+|95    |      pls2                        |pulse_7               |     5|
+|96    |      pls3                        |pulse_8               |     5|
+|97    |      pls4                        |pulse_9               |     7|
+|98    |    Stack_Master                  |Hstack                |  1056|
+|99    |      R0                          |QDE                   |    32|
+|100   |      R1                          |QDE_0                 |    32|
+|101   |      R2                          |QDE_1                 |    32|
+|102   |      R3                          |QDE_2                 |    32|
+|103   |      ram0                        |Ram8                  |    32|
+|104   |      ram1                        |Ram8_3                |    32|
+|105   |      ram2                        |Ram8_4                |    32|
+|106   |      ram3                        |Ram8_5                |    32|
+|107   |      update_counter              |next_count            |   800|
+|108   |    rst_mem                       |reset_mem             |     3|
++------+----------------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 971.922 ; gain = 668.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 142 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:24 . Memory (MB): peak = 971.922 ; gain = 310.668
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:41 . Memory (MB): peak = 971.922 ; gain = 668.602
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1001 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 8 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 136 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 128 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+275 Infos, 199 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:51 . Memory (MB): peak = 971.922 ; gain = 680.074
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/synth_1/Basys3V6.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Basys3V6_utilization_synth.rpt -pb Basys3V6_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.287 . Memory (MB): peak = 971.922 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 19 19:05:18 2018...
