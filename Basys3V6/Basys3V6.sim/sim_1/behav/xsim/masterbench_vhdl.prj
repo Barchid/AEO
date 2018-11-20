@@ -1,21 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
 "../../../../Basys3V6.ip_user_files/ip/my_ram/my_ram_sim_netlist.vhdl" \
-
-vhdl xbip_utils_v3_0_7  \
-"../../../../Basys3V6.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
-
-vhdl xbip_pipe_v3_0_3  \
-"../../../../Basys3V6.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
-
-vhdl xbip_bram18k_v3_0_3  \
-"../../../../Basys3V6.ip_user_files/ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
-
-vhdl mult_gen_v12_0_12  \
-"../../../../Basys3V6.ip_user_files/ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
-
-vhdl xil_defaultlib  \
-"../../../../Basys3V6.ip_user_files/ip/multiply/sim/multiply.vhd" \
+"../../../../Basys3V6.ip_user_files/ip/multiply/multiply_sim_netlist.vhdl" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPcode.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/homade_opcodes.vhd" \
@@ -31,13 +17,11 @@ vhdl xil_defaultlib  \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Led.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_MEcom.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Put.vhd" \
-"../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Rdm.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Snum.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_datastack.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_ram.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_regfile.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_switch.vhd" \
-"../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPfibo.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPget.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPidentity.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPmul16.vhd" \
@@ -60,7 +44,6 @@ vhdl xil_defaultlib  \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/predicat.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/pulse.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/qde.vhd" \
-"../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/rdm.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd" \
 "../../../../Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd" \

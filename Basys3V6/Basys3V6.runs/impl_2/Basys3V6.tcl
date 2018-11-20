@@ -60,26 +60,31 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {HDL 9-1061} -limit 100000
+set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param synth.incrementalSynthesisCache /tmp/.Xil_barchid/Vivado-29866-a14p3/incrSyn
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/m1/barchid/Desktop/Basys3V6/Basys3V6.cache/wt [current_project]
-  set_property parent.project_path /home/m1/barchid/Desktop/Basys3V6/Basys3V6.xpr [current_project]
-  set_property ip_output_repo /home/m1/barchid/Desktop/Basys3V6/Basys3V6.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.cache/wt [current_project]
+  set_property parent.project_path /home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.xpr [current_project]
+  set_property ip_output_repo /home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/synth_1/Basys3V6.dcp
-  read_ip -quiet /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci
-  read_ip -quiet /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/multiply/multiply.xci
-  read_ip -quiet /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/my_ram/my_ram.xci
-  read_xdc {{/home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc}}
+  add_files -quiet /home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/Basys3V6.dcp
+  read_ip -quiet /home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci
+  read_ip -quiet /home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/multiply/multiply.xci
+  read_ip -quiet /home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/my_ram/my_ram.xci
+  read_xdc {{/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc}}
   link_design -top Basys3V6 -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

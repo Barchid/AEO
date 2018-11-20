@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542706801">
+<GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542737359">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="Basys3V6.drc"/>
   <File Type="BG-BGN" Name="Basys3V6.bgn"/>
@@ -220,6 +220,12 @@
         <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/nexys3V6_vhdl/IP_Put.vhd"/>
         <Attr Name="ImportTime" Val="1444833575"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IP_Rdm.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -503,6 +509,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/random.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/nexys3V6_vhdl/reg.vhd">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
@@ -648,7 +660,6 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="Basys3V6"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

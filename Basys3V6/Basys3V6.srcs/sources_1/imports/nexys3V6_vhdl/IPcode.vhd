@@ -192,7 +192,7 @@ constant IPGe 				: std_logic_vector (4 downto 0) := "11101";  -- 2 1
 -- regsiter file
 -- 40 4F 
 --  register load  40 -- 47   store 48 -- 4F
-constant GenM_register : std_logic :='0';
+constant GenM_register : std_logic :='1';
 constant GenS_register : std_logic :='0';
 constant IPregister :  std_logic_vector (6 downto 0) :="0000100";
 
