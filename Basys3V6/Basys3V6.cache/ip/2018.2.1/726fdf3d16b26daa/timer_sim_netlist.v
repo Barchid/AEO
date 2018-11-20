@@ -1,8 +1,8 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Mon Nov 19 18:51:17 2018
-// Host        : DESKTOP-8AQBG2A running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
+// Date        : Tue Nov 20 10:39:53 2018
+// Host        : a13p2 running 64-bit Ubuntu 18.04.1 LTS
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ timer_sim_netlist.v
 // Design      : timer

@@ -64,12 +64,11 @@ type rom_array is array (natural range <>) of std_logic_vector ( 63 downto 0 ) ;
 
 constant  rom : rom_array := ( 
  --  master code 
- x"0C00_0000_0010_FFFF", -- 0000
- x"201F_A402_8804_201F", -- 0004
- x"A402_8804_C820_A002", -- 0008
- x"03FE_1400_FFFF_FFFF", -- 000C
- x"1000_0000_0004_1C00", -- 0010
- x"FFFF_FFFF_FFFF_FFFF", -- 0014
+ x"0C00_0000_000C_FFFF", -- 0000
+ x"201F_A402_8804_8003", -- 0004
+ x"A002_03FB_1400_FFFF", -- 0008
+ x"1000_0000_0004_1C00", -- 000C
+ x"FFFF_FFFF_FFFF_FFFF", -- 0010
  --  slave code 
  x"1c00_ffff_ffff_ffff", -- 0x0000
  x"ffff_ffff_ffff_ffff"  -- 0x0004

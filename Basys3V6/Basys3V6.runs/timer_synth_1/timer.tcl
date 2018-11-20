@@ -26,18 +26,18 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.xpr} [current_project]
+set_property webtalk.parent_dir /home/m1/barchid/Desktop/Basys3V6/Basys3V6.cache/wt [current_project]
+set_property parent.project_path /home/m1/barchid/Desktop/Basys3V6/Basys3V6.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo {c:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.cache/ip} [current_project]
+set_property ip_output_repo /home/m1/barchid/Desktop/Basys3V6/Basys3V6.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer_ooc.xdc}}]
+read_ip -quiet /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci
+set_property used_in_implementation false [get_files -all /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer_board.xdc]
+set_property used_in_implementation false [get_files -all /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xdc]
+set_property used_in_implementation false [get_files -all /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -51,7 +51,7 @@ read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 0
 
-set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1} -new_name timer -ip [get_ips timer]]
+set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1 -new_name timer -ip [get_ips timer]]
 
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
@@ -92,25 +92,25 @@ write_checkpoint -force -noxdef timer.dcp
 create_report "timer_synth_1_synth_report_utilization_0" "report_utilization -file timer_utilization_synth.rpt -pb timer_utilization_synth.pb"
 
 if { [catch {
-  write_verilog -force -mode synth_stub {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.v}
+  write_verilog -force -mode synth_stub /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.vhdl}
+  write_vhdl -force -mode synth_stub /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.v}
+  write_verilog -force -mode funcsim /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.vhdl}
+  write_vhdl -force -mode funcsim /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -121,37 +121,37 @@ if { [catch {
 
 }; # end if cached_ip 
 
-add_files {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.v}} -of_objects [get_files {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci}}]
+add_files /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.v -of_objects [get_files /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci]
 
-add_files {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.vhdl}} -of_objects [get_files {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci}}]
+add_files /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.vhdl -of_objects [get_files /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci]
 
-add_files {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.v}} -of_objects [get_files {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci}}]
+add_files /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.v -of_objects [get_files /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci]
 
-add_files {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.vhdl}} -of_objects [get_files {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci}}]
+add_files /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.vhdl -of_objects [get_files /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci]
 
-add_files {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer.dcp}} -of_objects [get_files {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci}}]
+add_files /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer.dcp -of_objects [get_files /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci]
 
-if {[file isdir {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.ip_user_files/ip/timer}]} {
+if {[file isdir /home/m1/barchid/Desktop/Basys3V6/Basys3V6.ip_user_files/ip/timer]} {
   catch { 
-    file copy -force {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.v}} {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.ip_user_files/ip/timer}
+    file copy -force /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.v /home/m1/barchid/Desktop/Basys3V6/Basys3V6.ip_user_files/ip/timer
   }
 }
 
-if {[file isdir {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.ip_user_files/ip/timer}]} {
+if {[file isdir /home/m1/barchid/Desktop/Basys3V6/Basys3V6.ip_user_files/ip/timer]} {
   catch { 
-    file copy -force {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.vhdl}} {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.ip_user_files/ip/timer}
+    file copy -force /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_sim_netlist.vhdl /home/m1/barchid/Desktop/Basys3V6/Basys3V6.ip_user_files/ip/timer
   }
 }
 
-if {[file isdir {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.ip_user_files/ip/timer}]} {
+if {[file isdir /home/m1/barchid/Desktop/Basys3V6/Basys3V6.ip_user_files/ip/timer]} {
   catch { 
-    file copy -force {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.v}} {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.ip_user_files/ip/timer}
+    file copy -force /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.v /home/m1/barchid/Desktop/Basys3V6/Basys3V6.ip_user_files/ip/timer
   }
 }
 
-if {[file isdir {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.ip_user_files/ip/timer}]} {
+if {[file isdir /home/m1/barchid/Desktop/Basys3V6/Basys3V6.ip_user_files/ip/timer]} {
   catch { 
-    file copy -force {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.vhdl}} {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.ip_user_files/ip/timer}
+    file copy -force /home/m1/barchid/Desktop/Basys3V6/Basys3V6.runs/timer_synth_1/timer_stub.vhdl /home/m1/barchid/Desktop/Basys3V6/Basys3V6.ip_user_files/ip/timer
   }
 }
 file delete __synthesis_is_running__

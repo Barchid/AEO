@@ -24,87 +24,87 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.xpr} [current_project]
+set_property webtalk.parent_dir /home/m1/barchid/Desktop/Basys3V6/Basys3V6.cache/wt [current_project]
+set_property parent.project_path /home/m1/barchid/Desktop/Basys3V6/Basys3V6.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo {c:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.cache/ip} [current_project]
+set_property ip_output_repo /home/m1/barchid/Desktop/Basys3V6/Basys3V6.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/BaudClk_adept.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Enable190.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPcode.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/homade_opcodes.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hsalve.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPBufO.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPTic.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPWait.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Actif.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Com.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Led.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_MEcom.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Put.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Snum.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_datastack.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_ram.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_regfile.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_switch.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPget.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPidentity.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPmul16.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPsleep.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPstack.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPwaitBT1.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2x32.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/QD.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/QDE_1.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Ram8.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/add_gen.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/afficheur.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/constant32.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/debounce4.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/dstack.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mysr8ce.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/netring.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/netring_master.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/next_count.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/predicat.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/pulse.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/qde.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regfile.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reset_mem.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/returnstack.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/select_in0_save.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/select_out.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_dispatch.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_rx.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/x7seg.vhd}
-  {C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd}
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/BaudClk_adept.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Enable190.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPcode.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/homade_opcodes.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hcontrolunit.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hsalve.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hstack.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPBufO.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPTic.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPWait.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Actif.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Com.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Led.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_MEcom.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Put.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Snum.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_datastack.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_ram.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_regfile.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_switch.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPget.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPidentity.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPmul16.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPsleep.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPstack.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPwaitBT1.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2x32.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux4.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/QD.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/QDE_1.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Ram8.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/add_gen.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/afficheur.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/constant32.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/debounce4.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/dstack.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mysr8ce.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/netring.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/netring_master.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/next_count.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/predicat.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/pulse.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/qde.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regfile.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reset_mem.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/returnstack.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/select_in0_save.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/select_out.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/slavedual_prom.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_dispatch.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_rx.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/x7seg.vhd
+  /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd
 }
-read_ip -quiet {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer_ooc.xdc}}]
+read_ip -quiet /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xci
+set_property used_in_implementation false [get_files -all /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer_board.xdc]
+set_property used_in_implementation false [get_files -all /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer.xdc]
+set_property used_in_implementation false [get_files -all /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/timer/timer_ooc.xdc]
 
-read_ip -quiet {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/multiply/multiply.xci}}
+read_ip -quiet /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/multiply/multiply.xci
 
-read_ip -quiet {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/my_ram/my_ram.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/sources_1/ip/my_ram/my_ram_ooc.xdc}}]
+read_ip -quiet /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/my_ram/my_ram.xci
+set_property used_in_implementation false [get_files -all /home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/sources_1/ip/my_ram/my_ram_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -114,8 +114,8 @@ set_property used_in_implementation false [get_files -all {{c:/Users/samib/Deskt
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/samib/Desktop/Master 1/AEO/AEO/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc}}]
+read_xdc {{/home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc}}
+set_property used_in_implementation false [get_files {{/home/m1/barchid/Desktop/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

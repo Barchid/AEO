@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542650574">
-  <File Type="PA-TCL" Name="Basys3V6.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Basys3V6_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="Basys3V6_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Basys3V6.vds"/>
-  <File Type="RDS-UTIL" Name="Basys3V6_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Basys3V6_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Basys3V6.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Basys3V6_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542706801">
   <File Type="VDS-TIMING-PB" Name="Basys3V6_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Basys3V6_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="Basys3V6.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="Basys3V6_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="Basys3V6_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="Basys3V6_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="Basys3V6.vds"/>
+  <File Type="REPORTS-TCL" Name="Basys3V6_reports.tcl"/>
+  <File Type="PA-TCL" Name="Basys3V6.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/nexys3V6_vhdl/BaudClk_adept.vhd">
@@ -609,7 +609,7 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="timer"/>
-  <BlockFileSet Type="BlockSrcs" Name="multiply"/>
   <BlockFileSet Type="BlockSrcs" Name="my_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="multiply"/>
+  <BlockFileSet Type="BlockSrcs" Name="timer"/>
 </GenRun>

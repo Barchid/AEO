@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="my_ram_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542649724">
+<GenRun Id="my_ram_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542706751">
+  <File Type="VDS-TIMING-PB" Name="my_ram_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="my_ram_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="my_ram.dcp"/>
   <File Type="PA-TCL" Name="my_ram.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="my_ram_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="my_ram_reports.tcl"/>
   <File Type="RDS-RDS" Name="my_ram.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="my_ram_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="my_ram_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="my_ram_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="my_ram.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="my_ram_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="my_ram_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/my_ram">
     <File Path="$PSRCDIR/sources_1/ip/my_ram/my_ram.xci">
       <FileInfo>
