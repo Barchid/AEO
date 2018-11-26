@@ -4,6 +4,7 @@
 slave
 start
 master
+
 : point
 	$FFF
 	and
@@ -13,31 +14,51 @@ master
 
 :init
 	0
-	<1
-	0
-	<1
+	>1
 ;
-start
-	rdm
-	>0
-	point
-	<0
-	12
-	->
-	point
-	add
-	$FFE001
-	<=
-	if
-		<1
-		1
-		add
-		>1
-	endif
 
-	<2
-	1
-	add
-	>2
-	
+:aff
+	7segdup
+	$1F
+	btn
+;
+
+
+
+:monteCarlo
+	ticraz
+	init
+	$FFFE
+	for
+		
+		rdm
+		>0
+		0>
+		point
+		0>
+		$C
+		->
+		point
+		add
+		$FFE001
+		<=
+		if
+			1>
+			1
+			add
+			>1
+		endif
+	next
+	tic
+	aff
+	$F
+	->
+	aff
+	pop1
+	1>
+	aff
+;
+
+start
+	monteCarlo
 endprogram
