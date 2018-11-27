@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date             : Tue Nov 20 19:12:22 2018
-| Host             : a14p3 running 64-bit Ubuntu 18.04.1 LTS
+| Date             : Tue Nov 27 17:53:19 2018
+| Host             : a14p4 running 64-bit Ubuntu 18.04.1 LTS
 | Command          : report_power -file Basys3V6_power_routed.rpt -pb Basys3V6_power_summary_routed.pb -rpx Basys3V6_power_routed.rpx
 | Design           : Basys3V6
 | Device           : xc7a35tcpg236-1
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.014 |       10 |       --- |             --- |
-| Slice Logic              |     0.004 |    14544 |       --- |             --- |
-|   LUT as Logic           |     0.004 |     7730 |     20800 |           37.16 |
+| Slice Logic              |     0.004 |    13790 |       --- |             --- |
+|   LUT as Logic           |     0.004 |     7434 |     20800 |           35.74 |
+|   Register               |    <0.001 |     4667 |     41600 |           11.22 |
 |   CARRY4                 |    <0.001 |      140 |      8150 |            1.72 |
-|   Register               |    <0.001 |     4994 |     41600 |           12.00 |
-|   F7/F8 Muxes            |    <0.001 |      812 |     32600 |            2.49 |
-|   LUT as Distributed RAM |    <0.001 |      160 |      9600 |            1.67 |
-|   Others                 |     0.000 |      232 |       --- |             --- |
-| Signals                  |     0.004 |     8184 |       --- |             --- |
+|   F7/F8 Muxes            |    <0.001 |      780 |     32600 |            2.39 |
+|   LUT as Distributed RAM |    <0.001 |      136 |      9600 |            1.42 |
+|   Others                 |     0.000 |      220 |       --- |             --- |
+| Signals                  |     0.004 |     7543 |       --- |             --- |
 | MMCM                     |     0.106 |        1 |         5 |           20.00 |
-| I/O                      |    <0.001 |       50 |       106 |           47.17 |
+| I/O                      |    <0.001 |       34 |       106 |           32.08 |
 | Static Power             |     0.072 |          |           |                 |
 | Total                    |     0.201 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.033 |       0.023 |      0.010 |
+| Vccint    |       1.000 |     0.032 |       0.023 |      0.010 |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -165,15 +165,13 @@ Table of Contents
 |   clk_gen                        |     0.107 |
 |     inst                         |     0.107 |
 |   my_Master                      |     0.020 |
-|     BufLed_reg                   |    <0.001 |
 |     BufO_reg                     |    <0.001 |
-|     BufSwitch_reg                |    <0.001 |
-|     HCU_Master                   |     0.004 |
+|     HCU_Master                   |     0.005 |
 |       Inst_returnstack           |    <0.001 |
 |         RAM_reg_0_15_0_5         |    <0.001 |
 |         RAM_reg_0_15_6_11        |    <0.001 |
 |     Inst_add_gen                 |    <0.001 |
-|     Inst_mem_Master              |     0.012 |
+|     Inst_mem_Master              |     0.013 |
 |       multi_bank[0].bank         |    <0.001 |
 |       multi_bank[10].bank        |    <0.001 |
 |       multi_bank[11].bank        |    <0.001 |
@@ -240,15 +238,6 @@ Table of Contents
 |       multi_bank[9].bank         |    <0.001 |
 |     MTic.Inst_IP_Tic             |    <0.001 |
 |       Tic_count                  |    <0.001 |
-|     Mdatastack.Inst_IPdataStack  |    <0.001 |
-|       DatastackTop_reg           |    <0.001 |
-|       Inst_datastack             |    <0.001 |
-|         RAM_reg_0_15_0_5         |    <0.001 |
-|         RAM_reg_0_15_12_17       |    <0.001 |
-|         RAM_reg_0_15_18_23       |    <0.001 |
-|         RAM_reg_0_15_24_29       |    <0.001 |
-|         RAM_reg_0_15_30_31       |    <0.001 |
-|         RAM_reg_0_15_6_11        |    <0.001 |
 |     Mmul16.Inst_IP_mul16         |    <0.001 |
 |       my_mul16                   |    <0.001 |
 |         U0                       |    <0.001 |
@@ -256,16 +245,6 @@ Table of Contents
 |             gLUT.gLUT_speed.iLUT |    <0.001 |
 |     Mrdm.Inst_IP_Rdm             |    <0.001 |
 |       inst_random                |    <0.001 |
-|     Mregister.Inst_IP_regfile    |    <0.001 |
-|       my_registers               |    <0.001 |
-|         R0                       |    <0.001 |
-|         R1                       |    <0.001 |
-|         R2                       |    <0.001 |
-|         R3                       |    <0.001 |
-|         R4                       |    <0.001 |
-|         R5                       |    <0.001 |
-|         R6                       |    <0.001 |
-|         R7                       |    <0.001 |
 |     Mwaitbtn.Inst_IPwaitBt       |    <0.001 |
 |       BufO_reg                   |    <0.001 |
 |       pls0                       |    <0.001 |
@@ -273,7 +252,7 @@ Table of Contents
 |       pls2                       |    <0.001 |
 |       pls3                       |    <0.001 |
 |       pls4                       |    <0.001 |
-|     Stack_Master                 |     0.002 |
+|     Stack_Master                 |     0.001 |
 |       R0                         |    <0.001 |
 |       R1                         |    <0.001 |
 |       R2                         |    <0.001 |
@@ -410,7 +389,7 @@ Table of Contents
 |         ram_reg_0_15_7_7         |    <0.001 |
 |         ram_reg_0_15_8_8         |    <0.001 |
 |         ram_reg_0_15_9_9         |    <0.001 |
-|       update_counter             |     0.002 |
+|       update_counter             |    <0.001 |
 |     rst_mem                      |    <0.001 |
 +----------------------------------+-----------+
 

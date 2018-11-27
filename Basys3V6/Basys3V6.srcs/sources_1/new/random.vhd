@@ -17,15 +17,15 @@ begin
     process (clk)
     begin
         if rising_edge(clk) then
-             if(enable = '1') then
                 if(reset = '1') then
                     r <= x"80000000";
                 else
-                    r(30 downto 0) <= r(31 downto 1);
-                    r(31) <= (((r(0) xor r(2)) xor r(3)) xor r(4));
+                    if(enable = '1') then
+                        r(30 downto 0) <= r(31 downto 1);
+                        r(31) <= (((r(0) xor r(2)) xor r(3)) xor r(4));
+                    end if;         
                 end if;
-             end if;
-        end if;
+            end if;
     end process;
     
     random_num <= r;

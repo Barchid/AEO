@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date         : Tue Nov 27 13:06:20 2018
-| Host         : a13p3 running 64-bit Ubuntu 18.04.1 LTS
+| Date         : Tue Nov 27 18:21:24 2018
+| Host         : a14p4 running 64-bit Ubuntu 18.04.1 LTS
 | Command      : report_bus_skew -warn_on_violation -file Basys3V6_bus_skew_routed.rpt -pb Basys3V6_bus_skew_routed.pb -rpx Basys3V6_bus_skew_routed.rpx
 | Design       : Basys3V6
 | Device       : 7a35t-cpg236

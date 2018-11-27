@@ -17,8 +17,12 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -56,6 +60,7 @@ read_vhdl -library xil_defaultlib {
   /home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_datastack.vhd
   /home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_ram.vhd
   /home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_regfile.vhd
+  /home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/new/IP_square2.vhd
   /home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_switch.vhd
   /home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPget.vhd
   /home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPidentity.vhd

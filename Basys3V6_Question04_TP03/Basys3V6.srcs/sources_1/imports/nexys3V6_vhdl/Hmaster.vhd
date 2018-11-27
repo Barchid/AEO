@@ -434,7 +434,7 @@ COMPONENT IP_Rdm
 --		);
 --	END COMPONENT;
 	
-COMPONENT IP_mul16
+COMPONENT IP_square2
 	GENERIC (Mycode : std_logic_vector (10 downto 0));
 	PORT(
 		Tin : IN std_logic_vector(31 downto 0);
@@ -910,7 +910,7 @@ end generate Mrdm;
 --end generate Mmuladd;
 
 Mmul16 : if genM_mul16 = '1' generate
-Inst_IP_mul16: IP_mul16
+Inst_IP_mul16: IP_square2
 		generic map (Mycode =>IPmul16)
 		PORT MAP(
 		Tin => Tbusld,

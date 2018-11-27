@@ -72,21 +72,21 @@ constant GenM_bufout : std_logic :='1';
 constant GenS_bufout : std_logic :='0';
 constant IPBufOut 		: code := "00000000010";  -- 1/0 0
 
-constant GenM_led : std_logic :='1';
+constant GenM_led : std_logic :='0';
 constant GenS_led : std_logic :='0';
 constant IPLed 			: code := "00000000011";   -- 1/0 1 
 
-constant GenM_switch : std_logic :='1';
+constant GenM_switch : std_logic :='0';
 constant GenS_switch : std_logic :='0';
 constant IPSwitch 		: code := "00000000100";	-- 0 1 
 
 -- IP identity   5
-constant GenM_identity : std_logic :='1';
+constant GenM_identity : std_logic :='0';
 constant GenS_identity : std_logic :='1';
 constant IPidentity  	: code := "00000000101";	-- x y  manip sur les sommets de piles
 
 -- dta stack T to R, R to T 6 et 7
-constant GenM_datastack : std_logic :='1';
+constant GenM_datastack : std_logic :='0';
 constant GenS_datastack : std_logic :='1';
 constant IPDataStack		: std_logic_vector (9 downto 0) :="0000000011";
 constant IDataPush		: std_logic_vector (0 downto 0) :="1";
@@ -129,7 +129,7 @@ constant IPRdm 		: code := "00000010000";  --  0  1
 
 
 --  Master slave com 12 , 13
-constant GenM_ME : std_logic :='1';
+constant GenM_ME : std_logic :='0';
 constant GenS_ME : std_logic :='0';
 constant IPME			: std_logic_vector (9 downto 0) :="0000001001";
 constant IPM2E			: code := IPME & "1";
@@ -192,7 +192,7 @@ constant IPGe 				: std_logic_vector (4 downto 0) := "11101";  -- 2 1
 -- regsiter file
 -- 40 4F 
 --  register load  40 -- 47   store 48 -- 4F
-constant GenM_register : std_logic :='1';
+constant GenM_register : std_logic :='0';
 constant GenS_register : std_logic :='0';
 constant IPregister :  std_logic_vector (6 downto 0) :="0000100";
 
@@ -210,7 +210,7 @@ constant IPWRITE			: code := IPME & "1";
 
 
 -- 1F0 1F1 1F2 (1F3 idle  idem a 1F2)
-constant GenM_actif : std_logic :='1';
+constant GenM_actif : std_logic :='0';
 constant GenS_actif : std_logic :='0';
 constant IPactif		: std_logic_vector (8 downto 0) := "001111100";	--  
 constant IPonx			: code := IPactif & "00";
@@ -219,7 +219,7 @@ constant IPonxy			: code := IPactif & "10";
 constant IPall			: code := IPactif & "11";
 
 --  1F8 1F9 1FA 1FB  1FE 1FF com 1FC 1FD bcom
-constant GenM_com : std_logic :='1';
+constant GenM_com : std_logic :='0';
 constant GenS_com : std_logic :='0';
 constant IPCom 		: std_logic_vector (7 downto 0) := "00111111";	-- 000 bcomx 001 bcomy  010 comx 011 comy 110 comx- 111 comy-
 
@@ -251,7 +251,7 @@ constant GenM_waitbtn : std_logic :='1';
 constant GenS_waitbtn : std_logic :='0';
 constant IPWaitBtn 		: code := "10000000010";   -- 1 0
 -- 403
-constant GenM_fibo : std_logic :='1';
+constant GenM_fibo : std_logic :='0';
 constant GenS_fibo : std_logic :='0';
 constant IPfibo 		: code := "10000000011";   -- 1 0
 -- 5FF

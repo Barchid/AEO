@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="timer_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542706746">
-  <File Type="RDS-UTIL" Name="timer_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="timer_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="timer_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="timer.vds"/>
   <File Type="RDS-DCP" Name="timer.dcp"/>
   <File Type="PA-TCL" Name="timer.tcl"/>

@@ -5,60 +5,50 @@ slave
 start
 master
 
-: point
-	$FFF
-	and
-	dup
-	mul16
-;
-
-:init
-	0
-	>1
-;
-
-:aff
-	7segdup
-	$1F
-	btn
-;
-
-
-
-:monteCarlo
+start
 	ticraz
-	init
-	$FFFE
+	$0
+	$10000
 	for
 		
 		rdm
-		>0
-		0>
-		point
-		0>
+		dup
+		
+		$FFF
+		and
+		dup
+		mul16
+		
+		swap
 		$C
 		->
-		point
+		
+		$FFF
+		and
+		dup
+		mul16
+		
 		add
 		$FFE001
 		<=
 		if
-			1>
-			1
-			add
-			>1
+			++
 		endif
 	next
-	tic
-	aff
-	$F
-	->
-	aff
-	pop1
-	1>
-	aff
-;
 
-start
-	monteCarlo
+	tic
+	
+	7segdup
+	$1F
+	btn
+	
+	$10
+	->
+	7seg
+	$1F
+	btn
+	
+	7seg
+	$1F
+	btn
 endprogram

@@ -17,10 +17,10 @@ Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9143 
+INFO: Helper process launched with PID 27396 
 Terminated helper unrecognised option '-nojournal'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1305.891 ; gain = 84.766 ; free physical = 523 ; free virtual = 8062
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1305.891 ; gain = 84.766 ; free physical = 1135 ; free virtual = 8943
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Basys3V6' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:42]
 INFO: [Synth 8-3491] module 'Wrapper_RAM' declared at '/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd:28' bound to instance 'UART_Wrapper' of component 'Wrapper_RAM' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:203]
@@ -206,103 +206,66 @@ INFO: [Synth 8-256] done synthesizing module 'reg0__parameterized1' (23#1) [/hom
 INFO: [Synth 8-638] synthesizing module 'reg0c' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd:37]
 	Parameter N bound to: 16 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'reg0c' (24#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd:37]
-	Parameter Mycode bound to: 11'b00000000011 
-INFO: [Synth 8-638] synthesizing module 'IP_Led' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Led.vhd:33]
-	Parameter Mycode bound to: 11'b00000000011 
-INFO: [Synth 8-256] done synthesizing module 'IP_Led' (25#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_Led.vhd:33]
-	Parameter Mycode bound to: 11'b00000000100 
-INFO: [Synth 8-638] synthesizing module 'IP_switch' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_switch.vhd:35]
-	Parameter Mycode bound to: 11'b00000000100 
-INFO: [Synth 8-256] done synthesizing module 'IP_switch' (26#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_switch.vhd:35]
 	Parameter Mycode bound to: 11'b00000000010 
 INFO: [Synth 8-638] synthesizing module 'IP_BufO' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPBufO.vhd:33]
 	Parameter Mycode bound to: 11'b00000000010 
-INFO: [Synth 8-256] done synthesizing module 'IP_BufO' (27#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPBufO.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'IP_BufO' (25#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPBufO.vhd:33]
 	Parameter Mycode bound to: 11'b10000000010 
 INFO: [Synth 8-638] synthesizing module 'IP_waitbt' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPwaitBT1.vhd:46]
 	Parameter Mycode bound to: 11'b10000000010 
 	Parameter N bound to: 5 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'reg1c' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd:37]
 	Parameter N bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'reg1c' (28#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'reg1c' (26#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd:37]
 WARNING: [Synth 8-614] signal 'btnout' is read in the process but is not in the sensitivity list [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPwaitBT1.vhd:123]
 WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPwaitBT1.vhd:139]
-INFO: [Synth 8-256] done synthesizing module 'IP_waitbt' (29#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPwaitBT1.vhd:46]
-	Parameter Mycode bound to: 7'b0000100 
-INFO: [Synth 8-638] synthesizing module 'IP_regfile' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_regfile.vhd:44]
-	Parameter Mycode bound to: 7'b0000100 
-INFO: [Synth 8-638] synthesizing module 'regfile' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regfile.vhd:99]
-INFO: [Synth 8-638] synthesizing module 'mux2x32' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2x32.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'mux2x32' (30#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Mux2x32.vhd:39]
-INFO: [Synth 8-638] synthesizing module 'QDE_1' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/QDE_1.vhd:43]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'QDE_1' (31#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/QDE_1.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'D4_16' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regfile.vhd:43]
-INFO: [Synth 8-226] default block is never used [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regfile.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'D4_16' (32#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regfile.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'regfile' (33#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regfile.vhd:99]
-INFO: [Synth 8-256] done synthesizing module 'IP_regfile' (34#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_regfile.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'IP_waitbt' (27#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPwaitBT1.vhd:46]
 	Parameter Mycode bound to: 6'b000001 
 INFO: [Synth 8-638] synthesizing module 'IP_Funit' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd:40]
 	Parameter Mycode bound to: 6'b000001 
-INFO: [Synth 8-256] done synthesizing module 'IP_Funit' (35#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'IP_Funit' (28#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd:40]
 	Parameter Mycode bound to: 8'b00000001 
 INFO: [Synth 8-638] synthesizing module 'IP_stack' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPstack.vhd:40]
 	Parameter Mycode bound to: 8'b00000001 
-INFO: [Synth 8-256] done synthesizing module 'IP_stack' (36#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPstack.vhd:40]
-	Parameter Mycode bound to: 11'b00000000101 
-INFO: [Synth 8-638] synthesizing module 'IP_identity' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPidentity.vhd:39]
-	Parameter Mycode bound to: 11'b00000000101 
-INFO: [Synth 8-256] done synthesizing module 'IP_identity' (37#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPidentity.vhd:39]
-	Parameter Mycode bound to: 10'b0000000011 
-INFO: [Synth 8-638] synthesizing module 'IP_datastack' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_datastack.vhd:38]
-	Parameter Mycode bound to: 10'b0000000011 
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'reg0c__parameterized1' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd:37]
-	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'reg0c__parameterized1' (37#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd:37]
-INFO: [Synth 8-638] synthesizing module 'dstack' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/dstack.vhd:39]
-INFO: [Synth 8-5534] Detected attribute (* keep = "yes" *) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/dstack.vhd:41]
-WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/dstack.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'dstack' (38#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/dstack.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'IP_datastack' (39#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IP_datastack.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'IP_stack' (29#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPstack.vhd:40]
 	Parameter Mycode bound to: 11'b00000000001 
 INFO: [Synth 8-638] synthesizing module 'IP_Tic' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPTic.vhd:39]
 	Parameter Mycode bound to: 11'b00000000001 
 	Parameter N bound to: 32 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'reg1c__parameterized1' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd:37]
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'reg1c__parameterized1' (39#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'IP_Tic' (40#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPTic.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'reg1c__parameterized1' (29#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/reg1c.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'IP_Tic' (30#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPTic.vhd:39]
 	Parameter Mycode bound to: 11'b00000010000 
 INFO: [Synth 8-638] synthesizing module 'IP_Rdm' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/new/IP_Rdm.vhd:45]
 	Parameter Mycode bound to: 11'b00000010000 
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'random' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/new/random.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'random' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/new/random.vhd:13]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'random' (41#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/new/random.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'IP_Rdm' (42#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/new/IP_Rdm.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'random' (31#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/new/random.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'IP_Rdm' (32#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/new/IP_Rdm.vhd:45]
 	Parameter Mycode bound to: 11'b00000010100 
 INFO: [Synth 8-638] synthesizing module 'IP_mul16' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPmul16.vhd:45]
 	Parameter Mycode bound to: 11'b00000010100 
 INFO: [Synth 8-637] synthesizing blackbox instance 'my_mul16' of component 'multiply' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPmul16.vhd:58]
-INFO: [Synth 8-256] done synthesizing module 'IP_mul16' (43#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPmul16.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'IP_mul16' (33#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/IPmul16.vhd:45]
+WARNING: [Synth 8-3848] Net BusLdld in module/entity HMaster does not have driver. [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:74]
 WARNING: [Synth 8-3848] Net ort in module/entity HMaster does not have driver. [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:73]
-INFO: [Synth 8-256] done synthesizing module 'HMaster' (44#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'HMaster' (34#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:56]
 INFO: [Synth 8-638] synthesizing module 'debounce4' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/debounce4.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'debounce4' (45#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/debounce4.vhd:35]
-INFO: [Synth 8-638] synthesizing module 'timer' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-9133-a14p3/realtime/timer_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'debounce4' (35#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/debounce4.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'timer' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-27309-a14p4/realtime/timer_stub.vhdl:14]
 INFO: [Synth 8-638] synthesizing module 'afficheur' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/afficheur.vhd:36]
 INFO: [Synth 8-638] synthesizing module 'x7seg' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/x7seg.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'x7seg' (46#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/x7seg.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'afficheur' (47#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/afficheur.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'x7seg' (36#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/x7seg.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'afficheur' (37#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/afficheur.vhd:36]
 INFO: [Synth 8-638] synthesizing module 'Enable190' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Enable190.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'Enable190' (48#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Enable190.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Enable190' (38#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Enable190.vhd:37]
 INFO: [Synth 8-638] synthesizing module 'arbitre' [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:58]
-INFO: [Synth 8-256] done synthesizing module 'arbitre' (49#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'arbitre' (39#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/arbitre2.vhd:58]
 INFO: [Synth 8-226] default block is never used [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:330]
 WARNING: [Synth 8-3848] Net it2 in module/entity Basys3V6 does not have driver. [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:191]
-INFO: [Synth 8-256] done synthesizing module 'Basys3V6' (50#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Basys3V6' (40#1) [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:42]
 WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[31]
 WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[30]
 WARNING: [Synth 8-3331] design IP_mul16 has unconnected port Tin[29]
@@ -340,7 +303,7 @@ WARNING: [Synth 8-3331] design select_in has unconnected port count[6]
 WARNING: [Synth 8-3331] design HMaster has unconnected port data_S
 WARNING: [Synth 8-3331] design HMaster has unconnected port wphase_S
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1363.516 ; gain = 142.391 ; free physical = 526 ; free virtual = 8066
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1362.516 ; gain = 141.391 ; free physical = 1129 ; free virtual = 8940
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -350,26 +313,27 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 WARNING: [Synth 8-3295] tying undriven pin HCU_Master:orwait to constant 0 [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:612]
+WARNING: [Synth 8-3295] tying undriven pin BufLed_reg:load to constant 0 [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:649]
 WARNING: [Synth 8-3295] tying undriven pin My_arbitre:it2 to constant 0 [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:274]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1363.516 ; gain = 142.391 ; free physical = 530 ; free virtual = 8070
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1362.516 ; gain = 141.391 ; free physical = 1136 ; free virtual = 8946
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1363.516 ; gain = 142.391 ; free physical = 530 ; free virtual = 8070
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1362.516 ; gain = 141.391 ; free physical = 1136 ; free virtual = 8946
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-9133-a14p3/timer/timer/timer_in_context.xdc] for cell 'clk_gen'
-Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-9133-a14p3/timer/timer/timer_in_context.xdc] for cell 'clk_gen'
-Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-9133-a14p3/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/my_mul16'
-WARNING: [Vivado 12-180] No cells matched 'get_cells -of [get_ports -no_traverse -quiet {A[0]}]'. [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-9133-a14p3/multiply/multiply/multiply_in_context.xdc:1]
-Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-9133-a14p3/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/my_mul16'
+Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-27309-a14p4/timer/timer/timer_in_context.xdc] for cell 'clk_gen'
+Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-27309-a14p4/timer/timer/timer_in_context.xdc] for cell 'clk_gen'
+Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-27309-a14p4/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/my_mul16'
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of [get_ports -no_traverse -quiet {A[0]}]'. [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-27309-a14p4/multiply/multiply/multiply_in_context.xdc:1]
+Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-27309-a14p4/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/my_mul16'
 Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc]
 Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3V6_propImpl.xdc].
@@ -379,26 +343,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1703.859 ; gain = 0.000 ; free physical = 253 ; free virtual = 7794
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1702.859 ; gain = 0.000 ; free physical = 847 ; free virtual = 8676
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 355 ; free virtual = 7893
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 944 ; free virtual = 8775
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 355 ; free virtual = 7893
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 944 ; free virtual = 8775
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for mclk. (constraint file  /home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-9133-a14p3/timer/timer/timer_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for mclk. (constraint file  /home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-9133-a14p3/timer/timer/timer_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for mclk. (constraint file  /home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-27309-a14p4/timer/timer/timer_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mclk. (constraint file  /home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/.Xil/Vivado-27309-a14p4/timer/timer/timer_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for clk_gen. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for my_Master/\Mmul16.Inst_IP_mul16 /my_mul16. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 356 ; free virtual = 7895
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 944 ; free virtual = 8775
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'uart_dispatch'
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -418,19 +382,15 @@ INFO: [Synth 8-5544] ROM "plus" won't be mapped to Block RAM because address siz
 INFO: [Synth 8-5544] ROM "plus" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "plus" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "plusret" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "BusLedld" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Tout0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "BOld" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'IP_waitbt'
 INFO: [Synth 8-5544] ROM "Tout0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "IPdone" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "actif" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd:86]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Funit_lib.vhd:77]
 INFO: [Synth 8-5546] ROM "actif" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Tout0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enable" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Tout0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'arbitre'
@@ -486,7 +446,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'digit_reg' [/home/m1/barchi
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'arbitre'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 322 ; free virtual = 7887
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 937 ; free virtual = 8766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -505,7 +465,7 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 10    
+	   2 Input      4 Bit       Adders := 8     
 	   2 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
@@ -515,7 +475,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	               64 Bit    Registers := 65    
 	               48 Bit    Registers := 1     
-	               32 Bit    Registers := 19    
+	               32 Bit    Registers := 10    
 	               16 Bit    Registers := 3     
 	               13 Bit    Registers := 1     
 	               12 Bit    Registers := 1     
@@ -523,7 +483,7 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 2     
 	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 4     
-	                4 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 3     
 	                1 Bit    Registers := 50    
@@ -534,8 +494,8 @@ Detailed RTL Component Info :
 	   8 Input     64 Bit        Muxes := 1     
 	   2 Input     48 Bit        Muxes := 3     
 	   3 Input     48 Bit        Muxes := 1     
-	   4 Input     32 Bit        Muxes := 10    
-	   2 Input     32 Bit        Muxes := 30    
+	   4 Input     32 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 27    
 	   3 Input     32 Bit        Muxes := 2     
 	   4 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
@@ -545,7 +505,7 @@ Detailed RTL Component Info :
 	   3 Input     12 Bit        Muxes := 2     
 	   2 Input     11 Bit        Muxes := 4     
 	   3 Input     11 Bit        Muxes := 1     
-	   8 Input      8 Bit        Muxes := 5     
+	   8 Input      8 Bit        Muxes := 4     
 	   4 Input      8 Bit        Muxes := 1     
 	   6 Input      7 Bit        Muxes := 1     
 	  19 Input      7 Bit        Muxes := 1     
@@ -559,11 +519,11 @@ Detailed RTL Component Info :
 	   3 Input      3 Bit        Muxes := 2     
 	   7 Input      3 Bit        Muxes := 1     
 	   9 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 11    
+	   2 Input      2 Bit        Muxes := 10    
 	   3 Input      2 Bit        Muxes := 2     
 	  16 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 40    
+	   2 Input      1 Bit        Muxes := 38    
 	   8 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 7     
 	   3 Input      1 Bit        Muxes := 11    
@@ -728,14 +688,6 @@ Module reg0c
 Detailed RTL Component Info : 
 +---Registers : 
 	               16 Bit    Registers := 1     
-Module IP_Led 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module IP_switch 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
 Module IP_BufO 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -749,22 +701,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   3 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
-Module mux2x32 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-Module QDE_1 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 1     
-Module D4_16 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   8 Input      8 Bit        Muxes := 1     
-Module IP_regfile 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
 Module IP_Funit 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -782,22 +718,6 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 3     
 	   3 Input     32 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
-Module reg0c__parameterized1 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 1     
-Module dstack 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      4 Bit       Adders := 2     
-+---Registers : 
-	                4 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      2 Bit        Muxes := 1     
-Module IP_datastack 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
 Module reg1c__parameterized1 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -874,11 +794,7 @@ Warning: Parallel synthesis criteria is not met
 INFO: [Synth 8-5545] ROM "pred/predicat" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory
 INFO: [Synth 8-5546] ROM "actif" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "actif" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Tout0" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory
-INFO: [Synth 8-5546] ROM "Mled.Inst_IP_Led/BusLedld" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Mswitch.Inst_IP_Switch/Tout0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element BufSwitch_reg/q_reg was removed.  [/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/regc.vhd:43]
 INFO: [Synth 8-5546] ROM "Mbufout.Inst_IPBufO/BOld" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Mrdm.Inst_IP_Rdm/Tout0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Mrdm.Inst_IP_Rdm/enable" won't be mapped to RAM because it is too sparse
@@ -893,6 +809,22 @@ WARNING: [Synth 8-6014] Unused sequential element My_arbitre/ack7_reg was remove
 INFO: [Synth 8-5544] ROM "UART_Wrapper/Inst_uart_dispatch/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 WARNING: [Synth 8-3331] design select_in has unconnected port count[7]
 WARNING: [Synth 8-3331] design select_in has unconnected port count[6]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[15]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[14]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[13]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[12]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[11]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[10]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[9]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[8]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[7]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[6]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[5]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[4]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[3]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[2]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[1]
+WARNING: [Synth 8-3331] design HMaster has unconnected port In16[0]
 WARNING: [Synth 8-3331] design HMaster has unconnected port data_S
 WARNING: [Synth 8-3331] design HMaster has unconnected port wphase_S
 INFO: [Synth 8-3886] merging instance 'My_arbitre/it_homade_reg[1]' (FDR) to 'My_arbitre/it_homade_reg[2]'
@@ -993,23 +925,22 @@ WARNING: [Synth 8-3332] Sequential element (D7seg_display/digit_reg[1]) is unuse
 WARNING: [Synth 8-3332] Sequential element (D7seg_display/digit_reg[0]) is unused and will be removed from module Basys3V6.
 WARNING: [Synth 8-3332] Sequential element (My_arbitre/it_homade_reg[2]) is unused and will be removed from module Basys3V6.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 206 ; free virtual = 7757
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:43 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 887 ; free virtual = 8723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Preliminary Mapping  Report (see note below)
-+-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
-|Module Name            | RTL Object                                         | Inference | Size (Depth x Width) | Primitives      | 
-+-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
-|my_Master/Stack_Master | ram0/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
-|my_Master/Stack_Master | ram1/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
-|my_Master/Stack_Master | ram2/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
-|my_Master/Stack_Master | ram3/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
-|my_Master/HCU_Master   | Inst_returnstack/RAM_reg                           | Implied   | 16 x 32              | RAM32M x 6      | 
-|my_Master              | Mdatastack.Inst_IPdataStack/Inst_datastack/RAM_reg | Implied   | 16 x 32              | RAM32M x 6      | 
-+-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
++-----------------------+--------------------------+-----------+----------------------+-----------------+
+|Module Name            | RTL Object               | Inference | Size (Depth x Width) | Primitives      | 
++-----------------------+--------------------------+-----------+----------------------+-----------------+
+|my_Master/Stack_Master | ram0/ram_reg             | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram1/ram_reg             | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram2/ram_reg             | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram3/ram_reg             | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/HCU_Master   | Inst_returnstack/RAM_reg | Implied   | 16 x 32              | RAM32M x 6      | 
++-----------------------+--------------------------+-----------+----------------------+-----------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -1028,29 +959,28 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_gen/clk_out1' to pin 
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_gen/clk_out2' to pin 'clk_gen/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 129 ; free virtual = 7664
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 766 ; free virtual = 8609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:45 . Memory (MB): peak = 1711.867 ; gain = 490.742 ; free physical = 150 ; free virtual = 7655
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 1710.867 ; gain = 489.742 ; free physical = 756 ; free virtual = 8599
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping  Report
-+-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
-|Module Name            | RTL Object                                         | Inference | Size (Depth x Width) | Primitives      | 
-+-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
-|my_Master/Stack_Master | ram0/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
-|my_Master/Stack_Master | ram1/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
-|my_Master/Stack_Master | ram2/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
-|my_Master/Stack_Master | ram3/ram_reg                                       | Implied   | 16 x 32              | RAM16X1S x 32   | 
-|my_Master/HCU_Master   | Inst_returnstack/RAM_reg                           | Implied   | 16 x 32              | RAM32M x 6      | 
-|my_Master              | Mdatastack.Inst_IPdataStack/Inst_datastack/RAM_reg | Implied   | 16 x 32              | RAM32M x 6      | 
-+-----------------------+----------------------------------------------------+-----------+----------------------+-----------------+
++-----------------------+--------------------------+-----------+----------------------+-----------------+
+|Module Name            | RTL Object               | Inference | Size (Depth x Width) | Primitives      | 
++-----------------------+--------------------------+-----------+----------------------+-----------------+
+|my_Master/Stack_Master | ram0/ram_reg             | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram1/ram_reg             | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram2/ram_reg             | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/Stack_Master | ram3/ram_reg             | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|my_Master/HCU_Master   | Inst_returnstack/RAM_reg | Implied   | 16 x 32              | RAM32M x 6      | 
++-----------------------+--------------------------+-----------+----------------------+-----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -1064,8 +994,14 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (my_Master/BufLed_reg/q_reg[15]) is unused and will be removed from module Basys3V6.
+WARNING: [Synth 8-3332] Sequential element (my_Master/BufLed_reg/q_reg[14]) is unused and will be removed from module Basys3V6.
+WARNING: [Synth 8-3332] Sequential element (my_Master/BufLed_reg/q_reg[13]) is unused and will be removed from module Basys3V6.
+WARNING: [Synth 8-3332] Sequential element (my_Master/BufLed_reg/q_reg[12]) is unused and will be removed from module Basys3V6.
+WARNING: [Synth 8-3332] Sequential element (my_Master/BufLed_reg/q_reg[11]) is unused and will be removed from module Basys3V6.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 1767.867 ; gain = 546.742 ; free physical = 202 ; free virtual = 7654
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:01:00 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 752 ; free virtual = 8595
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1122,7 +1058,7 @@ WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack
 WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[1] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 1767.867 ; gain = 546.742 ; free physical = 202 ; free virtual = 7653
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:01:01 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 753 ; free virtual = 8596
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1135,7 +1071,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 1767.867 ; gain = 546.742 ; free physical = 202 ; free virtual = 7653
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:01:01 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 753 ; free virtual = 8596
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1147,25 +1083,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 1767.867 ; gain = 546.742 ; free physical = 197 ; free virtual = 7649
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 749 ; free virtual = 8591
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 1767.867 ; gain = 546.742 ; free physical = 197 ; free virtual = 7649
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:01:03 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 748 ; free virtual = 8591
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:54 . Memory (MB): peak = 1767.867 ; gain = 546.742 ; free physical = 196 ; free virtual = 7648
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:01:04 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 747 ; free virtual = 8590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:54 . Memory (MB): peak = 1767.867 ; gain = 546.742 ; free physical = 196 ; free virtual = 7648
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:01:04 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 747 ; free virtual = 8590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1186,170 +1122,155 @@ Report Cell Usage:
 |1     |multiply_bbox_0 |     1|
 |2     |timer_bbox_1    |     1|
 |3     |CARRY4          |    63|
-|4     |LUT1            |    78|
-|5     |LUT2            |   372|
-|6     |LUT3            |   180|
-|7     |LUT4            |  1234|
-|8     |LUT5            |   386|
-|9     |LUT6            |  5625|
-|10    |MUXF7           |   552|
+|4     |LUT1            |    77|
+|5     |LUT2            |   281|
+|6     |LUT3            |   210|
+|7     |LUT4            |  1171|
+|8     |LUT5            |   347|
+|9     |LUT6            |  5438|
+|10    |MUXF7           |   520|
 |11    |MUXF8           |   260|
 |12    |RAM16X1S        |   128|
-|13    |RAM32M          |     8|
+|13    |RAM32M          |     2|
 |14    |FDCE            |    15|
-|15    |FDRE            |  4958|
-|16    |FDSE            |    22|
-|17    |IBUF            |    22|
+|15    |FDRE            |  4638|
+|16    |FDSE            |    15|
+|17    |IBUF            |     6|
 |18    |OBUF            |    27|
 +------+----------------+------+
 
 Report Instance Areas: 
-+------+----------------------------------+----------------------+------+
-|      |Instance                          |Module                |Cells |
-+------+----------------------------------+----------------------+------+
-|1     |top                               |                      | 13964|
-|2     |  D7seg_display                   |afficheur             |     8|
-|3     |  Inst_debounce4                  |debounce4             |    20|
-|4     |  My_E190                         |Enable190             |    32|
-|5     |  My_arbitre                      |arbitre               |    12|
-|6     |  UART_Wrapper                    |Wrapper_RAM           |   283|
-|7     |    Inst_uart_dispatch            |uart_dispatch         |   199|
-|8     |    Inst_uart_rx                  |uart_rx               |    41|
-|9     |      buf8                        |mySR8CE               |     8|
-|10    |      pulse_shift                 |pulse_82              |     4|
-|11    |    pulse_shift                   |pulse_81              |     9|
-|12    |    uart_baudClock_inst           |uart_baudClock        |    34|
-|13    |  my_Master                       |HMaster               | 13555|
-|14    |    BufLed_reg                    |reg0__parameterized1  |    16|
-|15    |    BufO_reg                      |reg0                  |    27|
-|16    |    BufSwitch_reg                 |reg0c                 |    32|
-|17    |    HCU_Master                    |HCU                   |  5756|
-|18    |      Inst_returnstack            |rstack                |    50|
-|19    |    Inst_add_gen                  |add_gen               |    96|
-|20    |    Inst_mem_Master               |Inst_mem              |  6056|
-|21    |      \multi_bank[0].bank         |mem_bank_1bit         |    93|
-|22    |      \multi_bank[10].bank        |mem_bank_1bit_18      |    93|
-|23    |      \multi_bank[11].bank        |mem_bank_1bit_19      |    93|
-|24    |      \multi_bank[12].bank        |mem_bank_1bit_20      |    93|
-|25    |      \multi_bank[13].bank        |mem_bank_1bit_21      |    93|
-|26    |      \multi_bank[14].bank        |mem_bank_1bit_22      |    93|
-|27    |      \multi_bank[15].bank        |mem_bank_1bit_23      |    95|
-|28    |      \multi_bank[16].bank        |mem_bank_1bit_24      |    93|
-|29    |      \multi_bank[17].bank        |mem_bank_1bit_25      |    95|
-|30    |      \multi_bank[18].bank        |mem_bank_1bit_26      |    95|
-|31    |      \multi_bank[19].bank        |mem_bank_1bit_27      |    93|
-|32    |      \multi_bank[1].bank         |mem_bank_1bit_28      |    93|
-|33    |      \multi_bank[20].bank        |mem_bank_1bit_29      |    93|
-|34    |      \multi_bank[21].bank        |mem_bank_1bit_30      |    93|
-|35    |      \multi_bank[22].bank        |mem_bank_1bit_31      |    94|
-|36    |      \multi_bank[23].bank        |mem_bank_1bit_32      |    93|
-|37    |      \multi_bank[24].bank        |mem_bank_1bit_33      |    93|
-|38    |      \multi_bank[25].bank        |mem_bank_1bit_34      |    94|
-|39    |      \multi_bank[26].bank        |mem_bank_1bit_35      |   101|
-|40    |      \multi_bank[27].bank        |mem_bank_1bit_36      |    97|
-|41    |      \multi_bank[28].bank        |mem_bank_1bit_37      |    93|
-|42    |      \multi_bank[29].bank        |mem_bank_1bit_38      |    98|
-|43    |      \multi_bank[2].bank         |mem_bank_1bit_39      |    93|
-|44    |      \multi_bank[30].bank        |mem_bank_1bit_40      |    93|
-|45    |      \multi_bank[31].bank        |mem_bank_1bit_41      |    93|
-|46    |      \multi_bank[32].bank        |mem_bank_1bit_42      |    94|
-|47    |      \multi_bank[33].bank        |mem_bank_1bit_43      |    93|
-|48    |      \multi_bank[34].bank        |mem_bank_1bit_44      |    95|
-|49    |      \multi_bank[35].bank        |mem_bank_1bit_45      |    93|
-|50    |      \multi_bank[36].bank        |mem_bank_1bit_46      |    93|
-|51    |      \multi_bank[37].bank        |mem_bank_1bit_47      |    93|
-|52    |      \multi_bank[38].bank        |mem_bank_1bit_48      |    93|
-|53    |      \multi_bank[39].bank        |mem_bank_1bit_49      |    93|
-|54    |      \multi_bank[3].bank         |mem_bank_1bit_50      |    93|
-|55    |      \multi_bank[40].bank        |mem_bank_1bit_51      |    93|
-|56    |      \multi_bank[41].bank        |mem_bank_1bit_52      |    93|
-|57    |      \multi_bank[42].bank        |mem_bank_1bit_53      |    93|
-|58    |      \multi_bank[43].bank        |mem_bank_1bit_54      |    93|
-|59    |      \multi_bank[44].bank        |mem_bank_1bit_55      |    93|
-|60    |      \multi_bank[45].bank        |mem_bank_1bit_56      |    93|
-|61    |      \multi_bank[46].bank        |mem_bank_1bit_57      |    94|
-|62    |      \multi_bank[47].bank        |mem_bank_1bit_58      |    93|
-|63    |      \multi_bank[48].bank        |mem_bank_1bit_59      |    96|
-|64    |      \multi_bank[49].bank        |mem_bank_1bit_60      |    93|
-|65    |      \multi_bank[4].bank         |mem_bank_1bit_61      |    94|
-|66    |      \multi_bank[50].bank        |mem_bank_1bit_62      |    96|
-|67    |      \multi_bank[51].bank        |mem_bank_1bit_63      |    94|
-|68    |      \multi_bank[52].bank        |mem_bank_1bit_64      |    96|
-|69    |      \multi_bank[53].bank        |mem_bank_1bit_65      |    97|
-|70    |      \multi_bank[54].bank        |mem_bank_1bit_66      |    96|
-|71    |      \multi_bank[55].bank        |mem_bank_1bit_67      |    97|
-|72    |      \multi_bank[56].bank        |mem_bank_1bit_68      |    94|
-|73    |      \multi_bank[57].bank        |mem_bank_1bit_69      |    96|
-|74    |      \multi_bank[58].bank        |mem_bank_1bit_70      |    93|
-|75    |      \multi_bank[59].bank        |mem_bank_1bit_71      |    93|
-|76    |      \multi_bank[5].bank         |mem_bank_1bit_72      |    93|
-|77    |      \multi_bank[60].bank        |mem_bank_1bit_73      |    97|
-|78    |      \multi_bank[61].bank        |mem_bank_1bit_74      |    93|
-|79    |      \multi_bank[62].bank        |mem_bank_1bit_75      |   129|
-|80    |      \multi_bank[63].bank        |mem_bank_1bit_76      |   101|
-|81    |      \multi_bank[6].bank         |mem_bank_1bit_77      |    93|
-|82    |      \multi_bank[7].bank         |mem_bank_1bit_78      |    93|
-|83    |      \multi_bank[8].bank         |mem_bank_1bit_79      |    93|
-|84    |      \multi_bank[9].bank         |mem_bank_1bit_80      |    94|
-|85    |    \MTic.Inst_IP_Tic             |IP_Tic                |    41|
-|86    |      Tic_count                   |reg1c__parameterized1 |    41|
-|87    |    \Mdatastack.Inst_IPdataStack  |IP_datastack          |    50|
-|88    |      DatastackTop_reg            |reg0c__parameterized1 |    32|
-|89    |      Inst_datastack              |dstack                |    18|
-|90    |    \Mmul16.Inst_IP_mul16         |IP_mul16              |    32|
-|91    |    \Mrdm.Inst_IP_Rdm             |IP_Rdm                |    33|
-|92    |      inst_random                 |random                |    33|
-|93    |    \Mregister.Inst_IP_regfile    |IP_regfile            |   352|
-|94    |      my_registers                |regfile               |   352|
-|95    |        R0                        |QDE_1_10              |    32|
-|96    |        R1                        |QDE_1_11              |    32|
-|97    |        R2                        |QDE_1_12              |    96|
-|98    |        R3                        |QDE_1_13              |    32|
-|99    |        R4                        |QDE_1_14              |    32|
-|100   |        R5                        |QDE_1_15              |    32|
-|101   |        R6                        |QDE_1_16              |    64|
-|102   |        R7                        |QDE_1_17              |    32|
-|103   |    \Mwaitbtn.Inst_IPwaitBt       |IP_waitbt             |    36|
-|104   |      BufO_reg                    |reg1c                 |     5|
-|105   |      pls0                        |pulse                 |     5|
-|106   |      pls1                        |pulse_6               |     5|
-|107   |      pls2                        |pulse_7               |     5|
-|108   |      pls3                        |pulse_8               |     5|
-|109   |      pls4                        |pulse_9               |     7|
-|110   |    Stack_Master                  |Hstack                |  1025|
-|111   |      R0                          |QDE                   |    32|
-|112   |      R1                          |QDE_0                 |    32|
-|113   |      R2                          |QDE_1                 |    32|
-|114   |      R3                          |QDE_2                 |    32|
-|115   |      ram0                        |Ram8                  |    32|
-|116   |      ram1                        |Ram8_3                |    32|
-|117   |      ram2                        |Ram8_4                |    32|
-|118   |      ram3                        |Ram8_5                |    32|
-|119   |      update_counter              |next_count            |   769|
-|120   |    rst_mem                       |reset_mem             |     3|
-+------+----------------------------------+----------------------+------+
++------+-----------------------------+----------------------+------+
+|      |Instance                     |Module                |Cells |
++------+-----------------------------+----------------------+------+
+|1     |top                          |                      | 13232|
+|2     |  D7seg_display              |afficheur             |     8|
+|3     |  Inst_debounce4             |debounce4             |    20|
+|4     |  My_E190                    |Enable190             |    32|
+|5     |  My_arbitre                 |arbitre               |    12|
+|6     |  UART_Wrapper               |Wrapper_RAM           |   283|
+|7     |    Inst_uart_dispatch       |uart_dispatch         |   199|
+|8     |    Inst_uart_rx             |uart_rx               |    41|
+|9     |      buf8                   |mySR8CE               |     8|
+|10    |      pulse_shift            |pulse_74              |     4|
+|11    |    pulse_shift              |pulse_73              |     9|
+|12    |    uart_baudClock_inst      |uart_baudClock        |    34|
+|13    |  my_Master                  |HMaster               | 12839|
+|14    |    BufO_reg                 |reg0                  |    27|
+|15    |    HCU_Master               |HCU                   |  5492|
+|16    |      Inst_returnstack       |rstack                |    50|
+|17    |    Inst_add_gen             |add_gen               |    96|
+|18    |    Inst_mem_Master          |Inst_mem              |  6056|
+|19    |      \multi_bank[0].bank    |mem_bank_1bit         |    93|
+|20    |      \multi_bank[10].bank   |mem_bank_1bit_10      |    93|
+|21    |      \multi_bank[11].bank   |mem_bank_1bit_11      |    93|
+|22    |      \multi_bank[12].bank   |mem_bank_1bit_12      |    93|
+|23    |      \multi_bank[13].bank   |mem_bank_1bit_13      |    93|
+|24    |      \multi_bank[14].bank   |mem_bank_1bit_14      |    93|
+|25    |      \multi_bank[15].bank   |mem_bank_1bit_15      |    95|
+|26    |      \multi_bank[16].bank   |mem_bank_1bit_16      |    93|
+|27    |      \multi_bank[17].bank   |mem_bank_1bit_17      |    95|
+|28    |      \multi_bank[18].bank   |mem_bank_1bit_18      |    95|
+|29    |      \multi_bank[19].bank   |mem_bank_1bit_19      |    93|
+|30    |      \multi_bank[1].bank    |mem_bank_1bit_20      |    93|
+|31    |      \multi_bank[20].bank   |mem_bank_1bit_21      |    93|
+|32    |      \multi_bank[21].bank   |mem_bank_1bit_22      |    93|
+|33    |      \multi_bank[22].bank   |mem_bank_1bit_23      |    94|
+|34    |      \multi_bank[23].bank   |mem_bank_1bit_24      |    93|
+|35    |      \multi_bank[24].bank   |mem_bank_1bit_25      |    93|
+|36    |      \multi_bank[25].bank   |mem_bank_1bit_26      |    94|
+|37    |      \multi_bank[26].bank   |mem_bank_1bit_27      |   101|
+|38    |      \multi_bank[27].bank   |mem_bank_1bit_28      |    97|
+|39    |      \multi_bank[28].bank   |mem_bank_1bit_29      |    93|
+|40    |      \multi_bank[29].bank   |mem_bank_1bit_30      |    98|
+|41    |      \multi_bank[2].bank    |mem_bank_1bit_31      |    93|
+|42    |      \multi_bank[30].bank   |mem_bank_1bit_32      |    93|
+|43    |      \multi_bank[31].bank   |mem_bank_1bit_33      |    93|
+|44    |      \multi_bank[32].bank   |mem_bank_1bit_34      |    94|
+|45    |      \multi_bank[33].bank   |mem_bank_1bit_35      |    93|
+|46    |      \multi_bank[34].bank   |mem_bank_1bit_36      |    95|
+|47    |      \multi_bank[35].bank   |mem_bank_1bit_37      |    93|
+|48    |      \multi_bank[36].bank   |mem_bank_1bit_38      |    93|
+|49    |      \multi_bank[37].bank   |mem_bank_1bit_39      |    93|
+|50    |      \multi_bank[38].bank   |mem_bank_1bit_40      |    93|
+|51    |      \multi_bank[39].bank   |mem_bank_1bit_41      |    93|
+|52    |      \multi_bank[3].bank    |mem_bank_1bit_42      |    93|
+|53    |      \multi_bank[40].bank   |mem_bank_1bit_43      |    93|
+|54    |      \multi_bank[41].bank   |mem_bank_1bit_44      |    93|
+|55    |      \multi_bank[42].bank   |mem_bank_1bit_45      |    93|
+|56    |      \multi_bank[43].bank   |mem_bank_1bit_46      |    93|
+|57    |      \multi_bank[44].bank   |mem_bank_1bit_47      |    93|
+|58    |      \multi_bank[45].bank   |mem_bank_1bit_48      |    93|
+|59    |      \multi_bank[46].bank   |mem_bank_1bit_49      |    94|
+|60    |      \multi_bank[47].bank   |mem_bank_1bit_50      |    93|
+|61    |      \multi_bank[48].bank   |mem_bank_1bit_51      |    96|
+|62    |      \multi_bank[49].bank   |mem_bank_1bit_52      |    93|
+|63    |      \multi_bank[4].bank    |mem_bank_1bit_53      |    94|
+|64    |      \multi_bank[50].bank   |mem_bank_1bit_54      |    96|
+|65    |      \multi_bank[51].bank   |mem_bank_1bit_55      |    94|
+|66    |      \multi_bank[52].bank   |mem_bank_1bit_56      |    96|
+|67    |      \multi_bank[53].bank   |mem_bank_1bit_57      |    97|
+|68    |      \multi_bank[54].bank   |mem_bank_1bit_58      |    96|
+|69    |      \multi_bank[55].bank   |mem_bank_1bit_59      |    97|
+|70    |      \multi_bank[56].bank   |mem_bank_1bit_60      |    94|
+|71    |      \multi_bank[57].bank   |mem_bank_1bit_61      |    96|
+|72    |      \multi_bank[58].bank   |mem_bank_1bit_62      |    93|
+|73    |      \multi_bank[59].bank   |mem_bank_1bit_63      |    93|
+|74    |      \multi_bank[5].bank    |mem_bank_1bit_64      |    93|
+|75    |      \multi_bank[60].bank   |mem_bank_1bit_65      |    97|
+|76    |      \multi_bank[61].bank   |mem_bank_1bit_66      |    93|
+|77    |      \multi_bank[62].bank   |mem_bank_1bit_67      |   129|
+|78    |      \multi_bank[63].bank   |mem_bank_1bit_68      |   101|
+|79    |      \multi_bank[6].bank    |mem_bank_1bit_69      |    93|
+|80    |      \multi_bank[7].bank    |mem_bank_1bit_70      |    93|
+|81    |      \multi_bank[8].bank    |mem_bank_1bit_71      |    93|
+|82    |      \multi_bank[9].bank    |mem_bank_1bit_72      |    94|
+|83    |    \MTic.Inst_IP_Tic        |IP_Tic                |    41|
+|84    |      Tic_count              |reg1c__parameterized1 |    41|
+|85    |    \Mmul16.Inst_IP_mul16    |IP_mul16              |    32|
+|86    |    \Mrdm.Inst_IP_Rdm        |IP_Rdm                |    33|
+|87    |      inst_random            |random                |    33|
+|88    |    \Mwaitbtn.Inst_IPwaitBt  |IP_waitbt             |    36|
+|89    |      BufO_reg               |reg1c                 |     5|
+|90    |      pls0                   |pulse                 |     5|
+|91    |      pls1                   |pulse_6               |     5|
+|92    |      pls2                   |pulse_7               |     5|
+|93    |      pls3                   |pulse_8               |     5|
+|94    |      pls4                   |pulse_9               |     7|
+|95    |    Stack_Master             |Hstack                |  1023|
+|96    |      R0                     |QDE                   |    32|
+|97    |      R1                     |QDE_0                 |    32|
+|98    |      R2                     |QDE_1                 |    32|
+|99    |      R3                     |QDE_2                 |    32|
+|100   |      ram0                   |Ram8                  |    32|
+|101   |      ram1                   |Ram8_3                |    32|
+|102   |      ram2                   |Ram8_4                |    32|
+|103   |      ram3                   |Ram8_5                |    32|
+|104   |      update_counter         |next_count            |   767|
+|105   |    rst_mem                  |reset_mem             |     3|
++------+-----------------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:54 . Memory (MB): peak = 1767.867 ; gain = 546.742 ; free physical = 196 ; free virtual = 7648
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:01:04 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 747 ; free virtual = 8590
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 142 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1767.867 ; gain = 206.398 ; free physical = 248 ; free virtual = 7700
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:54 . Memory (MB): peak = 1767.867 ; gain = 546.742 ; free physical = 248 ; free virtual = 7700
+Synthesis finished with 0 errors, 0 critical warnings and 174 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 1761.867 ; gain = 200.398 ; free physical = 798 ; free virtual = 8641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:01:04 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 798 ; free virtual = 8641
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1033 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 979 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 1 inverter(s) to 8 load pin(s).
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 136 instances were transformed.
+  A total of 130 instances were transformed.
   RAM16X1S => RAM32X1S (RAMS32): 128 instances
-  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 8 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-296 Infos, 199 Warnings, 0 Critical Warnings and 0 Errors encountered.
+265 Infos, 221 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:58 . Memory (MB): peak = 1767.867 ; gain = 558.430 ; free physical = 241 ; free virtual = 7693
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:08 . Memory (MB): peak = 1761.867 ; gain = 552.430 ; free physical = 790 ; free virtual = 8634
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/home/m1/barchid/Desktop/AEO/Basys3V6/Basys3V6.runs/synth_1/Basys3V6.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Basys3V6_utilization_synth.rpt -pb Basys3V6_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.38 . Memory (MB): peak = 1791.879 ; gain = 0.000 ; free physical = 235 ; free virtual = 7693
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 20 19:10:33 2018...
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1785.879 ; gain = 0.000 ; free physical = 788 ; free virtual = 8633
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 27 17:51:21 2018...
