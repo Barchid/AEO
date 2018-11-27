@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="my_ram_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542706751">
+  <File Type="RDS-UTIL" Name="my_ram_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="my_ram_utilization_synth.pb"/>
+  <File Type="RDS-RDS" Name="my_ram.vds"/>
+  <File Type="RDS-DCP" Name="my_ram.dcp"/>
+  <File Type="PA-TCL" Name="my_ram.tcl"/>
+  <File Type="REPORTS-TCL" Name="my_ram_reports.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/my_ram">
+    <File Path="$PSRCDIR/sources_1/ip/my_ram/my_ram.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../nexys3V6_vivado/nexys3V6_vivado.srcs/sources_1/ip/my_ram/my_ram.xci"/>
+        <Attr Name="ImportTime" Val="1483519878"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/my_ram.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../nexys3V6_vivado/nexys3V6_vivado.srcs/sources_1/ip/my_ram.xcix"/>
+        <Attr Name="ImportTime" Val="1483523560"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="my_ram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/my_ram">
+    <File Path="$PSRCDIR/sources_1/ip/my_ram/my_ram.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../nexys3V6_vivado/nexys3V6_vivado.srcs/sources_1/ip/my_ram/my_ram.xci"/>
+        <Attr Name="ImportTime" Val="1483519878"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/my_ram.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../nexys3V6_vivado/nexys3V6_vivado.srcs/sources_1/ip/my_ram.xcix"/>
+        <Attr Name="ImportTime" Val="1483523560"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="my_ram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
