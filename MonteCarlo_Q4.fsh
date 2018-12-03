@@ -1,14 +1,28 @@
 :ip rdm $9010
 ;
 
+:ip comparateur $A820
+;
+
+:ip finboucle $B021
+;
+
+:ip increment $C822
+;
+
+:ip pushFFFF $A823
+;
+
+:ip rshift $A824
+;
+
 slave
 start
 master
 
 start
 	ticraz
-	$0
-	$10000
+	pushFFFF
 	begin
 		
 		rdm
@@ -17,13 +31,10 @@ start
 		<=
 		if
 			swap
-			++
+			increment
 			swap
 		endif
-		--
-		dup
- 		0
-		=
+		finboucle
 	until
 	drop
 
@@ -33,8 +44,7 @@ start
 	$1F
 	btn
 	
-	$10
-	->
+	rshift
 	7seg
 	$1F
 	btn

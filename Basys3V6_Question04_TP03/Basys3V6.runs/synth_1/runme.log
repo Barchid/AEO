@@ -17,10 +17,10 @@ Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13404 
+INFO: Helper process launched with PID 6025 
 Terminated helper unrecognised option '-nojournal'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1305.891 ; gain = 84.766 ; free physical = 1446 ; free virtual = 9132
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1305.891 ; gain = 84.766 ; free physical = 172 ; free virtual = 10383
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Basys3V6' [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:42]
 INFO: [Synth 8-3491] module 'Wrapper_RAM' declared at '/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/uart_driverV2.vhd:28' bound to instance 'UART_Wrapper' of component 'Wrapper_RAM' [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Basys3V6.vhd:203]
@@ -255,7 +255,7 @@ WARNING: [Synth 8-3848] Net ort in module/entity HMaster does not have driver. [
 INFO: [Synth 8-256] done synthesizing module 'HMaster' (34#1) [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/Hmaster.vhd:56]
 INFO: [Synth 8-638] synthesizing module 'debounce4' [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/debounce4.vhd:35]
 INFO: [Synth 8-256] done synthesizing module 'debounce4' (35#1) [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/debounce4.vhd:35]
-INFO: [Synth 8-638] synthesizing module 'timer' [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-13348-a14p4/realtime/timer_stub.vhdl:14]
+INFO: [Synth 8-638] synthesizing module 'timer' [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-6016-a10p5/realtime/timer_stub.vhdl:14]
 INFO: [Synth 8-638] synthesizing module 'afficheur' [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/afficheur.vhd:36]
 INFO: [Synth 8-638] synthesizing module 'x7seg' [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/x7seg.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'x7seg' (36#1) [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/x7seg.vhd:40]
@@ -304,7 +304,7 @@ WARNING: [Synth 8-3331] design select_in has unconnected port count[6]
 WARNING: [Synth 8-3331] design HMaster has unconnected port data_S
 WARNING: [Synth 8-3331] design HMaster has unconnected port wphase_S
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1362.516 ; gain = 141.391 ; free physical = 1445 ; free virtual = 9132
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1362.516 ; gain = 141.391 ; free physical = 186 ; free virtual = 10272
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -320,24 +320,24 @@ WARNING: [Synth 8-3295] tying undriven pin My_arbitre:it2 to constant 0 [/home/m
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1362.516 ; gain = 141.391 ; free physical = 1434 ; free virtual = 9136
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1362.516 ; gain = 141.391 ; free physical = 183 ; free virtual = 10268
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1362.516 ; gain = 141.391 ; free physical = 1434 ; free virtual = 9136
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1362.516 ; gain = 141.391 ; free physical = 183 ; free virtual = 10268
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-13348-a14p4/timer/timer/timer_in_context.xdc] for cell 'clk_gen'
-Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-13348-a14p4/timer/timer/timer_in_context.xdc] for cell 'clk_gen'
-Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-13348-a14p4/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/mul_x'
-WARNING: [Vivado 12-180] No cells matched 'get_cells -of [get_ports -no_traverse -quiet {A[0]}]'. [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-13348-a14p4/multiply/multiply/multiply_in_context.xdc:1]
-Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-13348-a14p4/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/mul_x'
-Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-13348-a14p4/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/mul_y'
-WARNING: [Vivado 12-180] No cells matched 'get_cells -of [get_ports -no_traverse -quiet {A[0]}]'. [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-13348-a14p4/multiply/multiply/multiply_in_context.xdc:1]
-Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-13348-a14p4/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/mul_y'
+Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-6016-a10p5/timer/timer/timer_in_context.xdc] for cell 'clk_gen'
+Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-6016-a10p5/timer/timer/timer_in_context.xdc] for cell 'clk_gen'
+Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-6016-a10p5/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/mul_x'
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of [get_ports -no_traverse -quiet {A[0]}]'. [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-6016-a10p5/multiply/multiply/multiply_in_context.xdc:1]
+Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-6016-a10p5/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/mul_x'
+Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-6016-a10p5/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/mul_y'
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of [get_ports -no_traverse -quiet {A[0]}]'. [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-6016-a10p5/multiply/multiply/multiply_in_context.xdc:1]
+Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-6016-a10p5/multiply/multiply/multiply_in_context.xdc] for cell 'my_Master/Mmul16.Inst_IP_mul16/mul_y'
 Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc]
 Finished Parsing XDC File [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.srcs/constrs_1/imports/M1 basys3/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3V6_propImpl.xdc].
@@ -347,27 +347,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1702.859 ; gain = 0.000 ; free physical = 1174 ; free virtual = 8859
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1703.859 ; gain = 0.000 ; free physical = 129 ; free virtual = 10129
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 1273 ; free virtual = 8959
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 230 ; free virtual = 10230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 1273 ; free virtual = 8959
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 230 ; free virtual = 10230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for mclk. (constraint file  /home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-13348-a14p4/timer/timer/timer_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for mclk. (constraint file  /home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-13348-a14p4/timer/timer/timer_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for mclk. (constraint file  /home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-6016-a10p5/timer/timer/timer_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mclk. (constraint file  /home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/.Xil/Vivado-6016-a10p5/timer/timer/timer_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for clk_gen. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for my_Master/\Mmul16.Inst_IP_mul16 /mul_x. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for my_Master/\Mmul16.Inst_IP_mul16 /mul_y. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 1272 ; free virtual = 8958
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 230 ; free virtual = 10230
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'uart_dispatch'
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -451,7 +451,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'digit_reg' [/home/m1/barchi
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'arbitre'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 1263 ; free virtual = 8949
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 214 ; free virtual = 10214
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -966,7 +966,7 @@ WARNING: [Synth 8-3332] Sequential element (D7seg_display/digit_reg[1]) is unuse
 WARNING: [Synth 8-3332] Sequential element (D7seg_display/digit_reg[0]) is unused and will be removed from module Basys3V6.
 WARNING: [Synth 8-3332] Sequential element (My_arbitre/it_homade_reg[2]) is unused and will be removed from module Basys3V6.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 1205 ; free virtual = 8906
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 154 ; free virtual = 10151
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1000,13 +1000,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_gen/clk_out1' to pin 
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_gen/clk_out2' to pin 'clk_gen/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 1702.859 ; gain = 481.734 ; free physical = 1090 ; free virtual = 8790
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:53 . Memory (MB): peak = 1703.859 ; gain = 482.734 ; free physical = 127 ; free virtual = 9946
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1710.867 ; gain = 489.742 ; free physical = 1081 ; free virtual = 8781
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 1711.867 ; gain = 490.742 ; free physical = 226 ; free virtual = 10062
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1042,7 +1042,7 @@ WARNING: [Synth 8-3332] Sequential element (my_Master/BufLed_reg/q_reg[12]) is u
 WARNING: [Synth 8-3332] Sequential element (my_Master/BufLed_reg/q_reg[11]) is unused and will be removed from module Basys3V6.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 1082 ; free virtual = 8776
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 228 ; free virtual = 10059
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1099,7 +1099,7 @@ WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack
 WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[1] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin my_Master/HCU_Master/Inst_returnstack/dout_inferred:in0[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 1069 ; free virtual = 8776
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:01:05 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 225 ; free virtual = 10060
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1112,7 +1112,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 1069 ; free virtual = 8776
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:01:05 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 225 ; free virtual = 10060
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1124,25 +1124,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 1066 ; free virtual = 8771
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:01:07 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 220 ; free virtual = 10057
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 1072 ; free virtual = 8771
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:07 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 221 ; free virtual = 10057
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 1079 ; free virtual = 8770
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:07 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 220 ; free virtual = 10055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 1079 ; free virtual = 8770
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:08 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 213 ; free virtual = 10057
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1307,11 +1307,11 @@ Report Instance Areas:
 |105   |    rst_mem                  |reset_mem             |     3|
 +------+-----------------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 1079 ; free virtual = 8770
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:08 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 212 ; free virtual = 10056
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 206 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1761.867 ; gain = 200.398 ; free physical = 1123 ; free virtual = 8822
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 1123 ; free virtual = 8822
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 1761.867 ; gain = 199.398 ; free physical = 264 ; free virtual = 10108
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 1761.867 ; gain = 540.742 ; free physical = 262 ; free virtual = 10108
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 987 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1325,9 +1325,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 266 Infos, 254 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:57 . Memory (MB): peak = 1761.867 ; gain = 552.430 ; free physical = 1116 ; free virtual = 8814
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:12 . Memory (MB): peak = 1761.867 ; gain = 552.430 ; free physical = 248 ; free virtual = 10098
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/home/m1/barchid/Desktop/AEO/Basys3V6_Question04_TP03/Basys3V6.runs/synth_1/Basys3V6.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Basys3V6_utilization_synth.rpt -pb Basys3V6_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1785.879 ; gain = 0.000 ; free physical = 1103 ; free virtual = 8814
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 27 18:19:34 2018...
+report_utilization: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.42 . Memory (MB): peak = 1785.879 ; gain = 0.000 ; free physical = 242 ; free virtual = 10098
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  3 12:59:20 2018...

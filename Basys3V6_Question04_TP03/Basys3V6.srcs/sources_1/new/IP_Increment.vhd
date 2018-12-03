@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_unsigned.all;
 
 entity IP_Increment is
-    GENERIC (Mycode : std_logic_vector(5 downto 0) := "000000" );
+    GENERIC (Mycode : std_logic_vector(10 downto 0));
     Port ( 
           Tin : in  STD_LOGIC_VECTOR (31 downto 0);
        Nin : in  STD_LOGIC_VECTOR (31 downto 0);

@@ -178,6 +178,7 @@ component sample is
 		);
 	END COMPONENT;
 	
+	
 signal Busdisplay : std_logic_vector (31 downto 0) := x"00000000" ;
 signal Hclk , clk190 , clk200Mhz, clk100, clk50, E190, ram_clk : std_logic ;
 signal btnd : std_logic_vector (4 downto 0) ;

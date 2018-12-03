@@ -206,6 +206,14 @@ constant IPREAD			: code := IPME & "0";
 constant IPWRITE			: code := IPME & "1";
 
 
+-- YOLO
+
+constant IP_Comparateur			: code := "00000100000";
+constant IP_FinBoucle			: code := "00000100001";
+constant IP_Increment			: code := "00000100010";
+constant IP_Push_FFFF			: code := "00000100011";
+constant IP_RShift			: code := "00000100100";
+
 
 
 

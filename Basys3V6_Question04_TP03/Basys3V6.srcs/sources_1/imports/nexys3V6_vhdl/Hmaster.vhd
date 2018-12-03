@@ -444,8 +444,47 @@ COMPONENT IP_square2
 		);
 	END COMPONENT;
 	
-
-
+	COMPONENT IP_Comparateur is
+     GENERIC (Mycode : std_logic_vector(10 downto 0));
+       Port ( 
+             Tin : in  STD_LOGIC_VECTOR (31 downto 0);
+          IPcode : in  STD_LOGIC_VECTOR (10 downto 0);
+          Tout : out  STD_LOGIC_VECTOR (31 downto 0));
+    END COMPONENT;
+    
+    COMPONENT IP_FinBoucle is
+     GENERIC (Mycode : std_logic_vector(10 downto 0) := "000000" );
+        Port ( 
+            Tin : in  STD_LOGIC_VECTOR (31 downto 0);
+            IPcode : in  STD_LOGIC_VECTOR (10 downto 0);
+            Tout : out  STD_LOGIC_VECTOR (31 downto 0);
+            Nout : out  STD_LOGIC_VECTOR (31 downto 0));
+     END COMPONENT;
+    
+    COMPONENT IP_Increment is
+        GENERIC (Mycode : std_logic_vector(10 downto 0));
+        Port ( 
+              Tin : in  STD_LOGIC_VECTOR (31 downto 0);
+           Nin : in  STD_LOGIC_VECTOR (31 downto 0);
+           IPcode : in  STD_LOGIC_VECTOR (10 downto 0);
+           Tout : out  STD_LOGIC_VECTOR (31 downto 0));
+     END COMPONENT;
+    
+    COMPONENT IP_Push_FFFF is
+     GENERIC (Mycode : std_logic_vector(10 downto 0));
+      Port ( 
+         IPcode : in  STD_LOGIC_VECTOR (10 downto 0);
+         Tout : out  STD_LOGIC_VECTOR (31 downto 0);
+         Nout : out  STD_LOGIC_VECTOR (31 downto 0));
+     END COMPONENT;
+    
+    COMPONENT IP_RShift is
+    GENERIC (Mycode : std_logic_vector(10 downto 0));
+        Port ( 
+            Tin : in  STD_LOGIC_VECTOR (31 downto 0);
+            IPcode : in  STD_LOGIC_VECTOR (10 downto 0);
+            Tout : out  STD_LOGIC_VECTOR (31 downto 0));
+     END COMPONENT;
 
 signal ortbus : std_logic_vector ( NX_SLAVE-1 downto 0) ;
 signal  Xb, Yb: std_logic_vector (1 downto 0);
@@ -919,6 +958,53 @@ Inst_IP_mul16: IP_square2
 		Tout => Tbusst
 	);
 end generate Mmul16;
+
+
+
+
+
+
+inst_comparateur : IP_Comparateur 
+     GENERIC map (Mycode => IP_Comparateur)
+       Port map ( 
+             Tin => Tbusld
+          IPcode => Icode
+          Tout => Tbusst
+    );
+    
+    COMPONENT IP_FinBoucle is
+     GENERIC (Mycode : std_logic_vector(10 downto 0) := "000000" );
+        Port ( 
+            Tin : in  STD_LOGIC_VECTOR (31 downto 0);
+            IPcode : in  STD_LOGIC_VECTOR (10 downto 0);
+            Tout : out  STD_LOGIC_VECTOR (31 downto 0);
+            Nout : out  STD_LOGIC_VECTOR (31 downto 0));
+     END COMPONENT;
+    
+    COMPONENT IP_Increment is
+        GENERIC (Mycode : std_logic_vector(10 downto 0));
+        Port ( 
+              Tin : in  STD_LOGIC_VECTOR (31 downto 0);
+           Nin : in  STD_LOGIC_VECTOR (31 downto 0);
+           IPcode : in  STD_LOGIC_VECTOR (10 downto 0);
+           Tout : out  STD_LOGIC_VECTOR (31 downto 0));
+     END COMPONENT;
+    
+    COMPONENT IP_Push_FFFF is
+     GENERIC (Mycode : std_logic_vector(10 downto 0));
+      Port ( 
+         IPcode : in  STD_LOGIC_VECTOR (10 downto 0);
+         Tout : out  STD_LOGIC_VECTOR (31 downto 0);
+         Nout : out  STD_LOGIC_VECTOR (31 downto 0));
+     END COMPONENT;
+    
+    COMPONENT IP_RShift is
+    GENERIC (Mycode : std_logic_vector(10 downto 0));
+        Port ( 
+            Tin : in  STD_LOGIC_VECTOR (31 downto 0);
+            IPcode : in  STD_LOGIC_VECTOR (10 downto 0);
+            Tout : out  STD_LOGIC_VECTOR (31 downto 0));
+     END COMPONENT;
 
 --
 -- all IPDONE must be connected here	
