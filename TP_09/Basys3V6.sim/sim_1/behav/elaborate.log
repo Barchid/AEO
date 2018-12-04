@@ -1,0 +1,92 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 4ba8ad15e12f4140bd3b22c314446cc2 --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_7 -L xbip_pipe_v3_0_3 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L secureip -L xpm --snapshot masterbench_behav xil_defaultlib.masterbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1293] range choice ignored [C:/Users/jld/nexys3V6_vivado/nexys3V6_vivado.srcs/sources_1/imports/nexys3V6_vhdl/IP_Rdm.vhd:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.ipcodes
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.opcodes
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_viv_comp
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_pkg
+Compiling architecture behavioral of entity xil_defaultlib.IP_Led [\IP_Led(mycode="00000000011")\]
+Compiling architecture behavioral of entity xil_defaultlib.IP_switch [\IP_switch(mycode="00000000100")...]
+Compiling architecture behavioral of entity xil_defaultlib.IP_BufO [\IP_BufO(mycode="00000000010")\]
+Compiling architecture behavioral of entity xil_defaultlib.pulse [pulse_default]
+Compiling architecture reg1c of entity xil_defaultlib.reg1c [\reg1c(n=5)\]
+Compiling architecture fsm of entity xil_defaultlib.IP_waitbt [\IP_waitbt(mycode="10000000010")...]
+Compiling architecture dummyfibo of entity xil_defaultlib.IP_fibo [ip_fibo_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture ram256x1s_v of entity unisim.RAM256X1S [ram256x1s_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000010")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01000000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000001100...]
+Compiling architecture structure of entity xil_defaultlib.my_ram_spram [my_ram_spram_default]
+Compiling architecture structure of entity xil_defaultlib.my_ram_dist_mem_gen_v8_0_11_synth [my_ram_dist_mem_gen_v8_0_11_synt...]
+Compiling architecture structure of entity xil_defaultlib.my_ram_dist_mem_gen_v8_0_11 [my_ram_dist_mem_gen_v8_0_11_defa...]
+Compiling architecture structure of entity xil_defaultlib.my_ram [my_ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.IP_ram [\IP_ram(mycode="0000101000")\]
+Compiling architecture behavioral of entity xil_defaultlib.mux2x32 [mux2x32_default]
+Compiling architecture behavioral of entity xil_defaultlib.QDE_1 [qde_1_default]
+Compiling architecture d4_16_v of entity xil_defaultlib.D4_16 [d4_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.regfile [regfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.IP_regfile [\IP_regfile(mycode="0000100")\]
+Compiling architecture myfunit of entity xil_defaultlib.IP_Funit [\IP_Funit(mycode="000001")\]
+Compiling architecture behavioral of entity xil_defaultlib.IP_stack [\IP_stack(mycode="00000001")\]
+Compiling architecture behavioral of entity xil_defaultlib.IP_identity [\IP_identity(mycode="00000000101...]
+Compiling architecture reg0c of entity xil_defaultlib.reg0c [reg0c_default]
+Compiling architecture behavioral of entity xil_defaultlib.dstack [dstack_default]
+Compiling architecture behavioral of entity xil_defaultlib.IP_datastack [\IP_datastack(mycode="0000000011...]
+Compiling architecture reg1c of entity xil_defaultlib.reg1c [reg1c_default]
+Compiling architecture behavioral of entity xil_defaultlib.IP_Tic [\IP_Tic(mycode="00000000001")\]
+Compiling architecture behavioral of entity xil_defaultlib.random [random_default]
+Compiling architecture rdm of entity xil_defaultlib.IP_rdm [\IP_rdm(mycode="00000010000")\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ai_type=1,bi_type=1,a...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.luts [\luts(c_xdevicefamily="artix7",c...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12_viv [\mult_gen_v12_0_12_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12 [\mult_gen_v12_0_12(c_xdevicefami...]
+Compiling architecture multiply_arch of entity xil_defaultlib.multiply [multiply_default]
+Compiling architecture behavioral of entity xil_defaultlib.IP_mul16 [\IP_mul16(mycode="00000010100")\]
+Compiling architecture behavioral of entity xil_defaultlib.mem_bank_1bit [mem_bank_1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Inst_mem [inst_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.add_gen [add_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.reset_mem [reset_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.constant32 [constant32_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4 [mux4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux2 [mux2_default]
+Compiling architecture behavioral of entity xil_defaultlib.predicat [predicat_default]
+Compiling architecture rtl of entity xil_defaultlib.Ram8 [ram8_default]
+Compiling architecture qde of entity xil_defaultlib.QDE [qde_default]
+Compiling architecture behavioral of entity xil_defaultlib.select_in [select_in_default]
+Compiling architecture behavioral of entity xil_defaultlib.select_out [select_out_default]
+Compiling architecture behavioral of entity xil_defaultlib.next_count [next_count_default]
+Compiling architecture behavioral of entity xil_defaultlib.Hstack [hstack_default]
+Compiling architecture behavioral of entity xil_defaultlib.rstack [rstack_default]
+Compiling architecture behavioral of entity xil_defaultlib.HCU [hcu_default]
+Compiling architecture reg0 of entity xil_defaultlib.reg0 [\reg0(n=16)\]
+Compiling architecture reg0 of entity xil_defaultlib.reg0 [\reg0(n=8)\]
+Compiling architecture reg0c of entity xil_defaultlib.reg0c [\reg0c(n=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.HMaster [hmaster_default]
+Compiling architecture behavior of entity xil_defaultlib.masterbench
+Built simulation snapshot masterbench_behav

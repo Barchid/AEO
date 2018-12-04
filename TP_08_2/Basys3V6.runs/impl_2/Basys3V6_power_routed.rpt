@@ -1,0 +1,398 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
+| Date             : Tue Dec  4 13:17:36 2018
+| Host             : a13p1 running 64-bit Ubuntu 18.04.1 LTS
+| Command          : report_power -file Basys3V6_power_routed.rpt -pb Basys3V6_power_summary_routed.pb -rpx Basys3V6_power_routed.rpx
+| Design           : Basys3V6
+| Device           : xc7a35tcpg236-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.201        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.129        |
+| Device Static (W)        | 0.072        |
+| Effective TJA (C/W)      | 5.0          |
+| Max Ambient (C)          | 84.0         |
+| Junction Temperature (C) | 26.0         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.014 |       10 |       --- |             --- |
+| Slice Logic              |     0.004 |    13847 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     7236 |     20800 |           34.79 |
+|   Register               |    <0.001 |     4668 |     41600 |           11.22 |
+|   CARRY4                 |    <0.001 |      214 |      8150 |            2.63 |
+|   F7/F8 Muxes            |    <0.001 |      780 |     32600 |            2.39 |
+|   LUT as Distributed RAM |    <0.001 |      136 |      9600 |            1.42 |
+|   Others                 |     0.000 |      266 |       --- |             --- |
+|   LUT as Shift Register  |     0.000 |        1 |      9600 |            0.01 |
+| Signals                  |     0.004 |     7486 |       --- |             --- |
+| MMCM                     |     0.106 |        1 |         5 |           20.00 |
+| I/O                      |    <0.001 |       34 |       106 |           32.08 |
+| Static Power             |     0.072 |          |           |                 |
+| Total                    |     0.201 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.032 |       0.022 |      0.010 |
+| Vccaux    |       1.800 |     0.071 |       0.059 |      0.013 |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 5.0                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++------------------+-----------------------------+-----------------+
+| Clock            | Domain                      | Constraint (ns) |
++------------------+-----------------------------+-----------------+
+| clk_out1_timer   | clk_gen/inst/clk_out1_timer |            10.0 |
+| clk_out1_timer_1 | clk_gen/inst/clk_out1_timer |            10.0 |
+| clk_out2_timer   | clk_gen/inst/clk_out2_timer |            20.0 |
+| clk_out2_timer_1 | clk_gen/inst/clk_out2_timer |            20.0 |
+| clkfbout_timer   | clk_gen/inst/clkfbout_timer |            10.0 |
+| clkfbout_timer_1 | clk_gen/inst/clkfbout_timer |            10.0 |
+| mclk             | mclk                        |            10.0 |
+| sys_clk_pin      | mclk                        |            10.0 |
++------------------+-----------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------------------------------+-----------+
+| Name                                   | Power (W) |
++----------------------------------------+-----------+
+| Basys3V6                               |     0.129 |
+|   D7seg_display                        |    <0.001 |
+|   Inst_debounce4                       |    <0.001 |
+|   My_E190                              |    <0.001 |
+|   My_arbitre                           |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_0_0   |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_10_10 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_11_11 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_12_12 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_13_13 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_14_14 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_15_15 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_16_16 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_17_17 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_18_18 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_19_19 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_1_1   |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_20_20 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_21_21 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_22_22 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_23_23 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_24_24 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_25_25 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_26_26 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_27_27 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_28_28 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_29_29 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_2_2   |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_30_30 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_31_31 |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_3_3   |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_4_4   |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_5_5   |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_6_6   |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_7_7   |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_8_8   |    <0.001 |
+|   Stack_Master/ram0/ram_reg_0_15_9_9   |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_0_0   |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_10_10 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_11_11 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_12_12 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_13_13 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_14_14 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_15_15 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_16_16 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_17_17 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_18_18 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_19_19 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_1_1   |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_20_20 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_21_21 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_22_22 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_23_23 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_24_24 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_25_25 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_26_26 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_27_27 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_28_28 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_29_29 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_2_2   |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_30_30 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_31_31 |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_3_3   |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_4_4   |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_5_5   |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_6_6   |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_7_7   |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_8_8   |    <0.001 |
+|   Stack_Master/ram1/ram_reg_0_15_9_9   |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_0_0   |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_10_10 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_11_11 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_12_12 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_13_13 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_14_14 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_15_15 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_16_16 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_17_17 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_18_18 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_19_19 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_1_1   |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_20_20 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_21_21 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_22_22 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_23_23 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_24_24 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_25_25 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_26_26 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_27_27 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_28_28 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_29_29 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_2_2   |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_30_30 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_31_31 |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_3_3   |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_4_4   |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_5_5   |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_6_6   |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_7_7   |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_8_8   |    <0.001 |
+|   Stack_Master/ram2/ram_reg_0_15_9_9   |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_0_0   |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_10_10 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_11_11 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_12_12 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_13_13 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_14_14 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_15_15 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_16_16 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_17_17 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_18_18 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_19_19 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_1_1   |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_20_20 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_21_21 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_22_22 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_23_23 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_24_24 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_25_25 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_26_26 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_27_27 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_28_28 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_29_29 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_2_2   |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_30_30 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_31_31 |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_3_3   |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_4_4   |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_5_5   |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_6_6   |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_7_7   |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_8_8   |    <0.001 |
+|   Stack_Master/ram3/ram_reg_0_15_9_9   |    <0.001 |
+|   UART_Wrapper                         |    <0.001 |
+|     Inst_uart_dispatch                 |    <0.001 |
+|     Inst_uart_rx                       |    <0.001 |
+|       buf8                             |    <0.001 |
+|       pulse_shift                      |    <0.001 |
+|     pulse_shift                        |    <0.001 |
+|     uart_baudClock_inst                |    <0.001 |
+|   clk_gen                              |     0.107 |
+|     inst                               |     0.107 |
+|   my_Master                            |     0.019 |
+|     BufO_reg                           |    <0.001 |
+|     HCU_Master                         |     0.004 |
+|       Inst_returnstack                 |    <0.001 |
+|         RAM_reg_0_15_0_5               |    <0.001 |
+|         RAM_reg_0_15_6_11              |    <0.001 |
+|     Inst_add_gen                       |    <0.001 |
+|     Inst_mem_Master                    |     0.013 |
+|       multi_bank[0].bank               |    <0.001 |
+|       multi_bank[10].bank              |    <0.001 |
+|       multi_bank[11].bank              |    <0.001 |
+|       multi_bank[12].bank              |    <0.001 |
+|       multi_bank[13].bank              |    <0.001 |
+|       multi_bank[14].bank              |    <0.001 |
+|       multi_bank[15].bank              |    <0.001 |
+|       multi_bank[16].bank              |    <0.001 |
+|       multi_bank[17].bank              |    <0.001 |
+|       multi_bank[18].bank              |    <0.001 |
+|       multi_bank[19].bank              |    <0.001 |
+|       multi_bank[1].bank               |    <0.001 |
+|       multi_bank[20].bank              |    <0.001 |
+|       multi_bank[21].bank              |    <0.001 |
+|       multi_bank[22].bank              |    <0.001 |
+|       multi_bank[23].bank              |    <0.001 |
+|       multi_bank[24].bank              |    <0.001 |
+|       multi_bank[25].bank              |    <0.001 |
+|       multi_bank[26].bank              |    <0.001 |
+|       multi_bank[27].bank              |    <0.001 |
+|       multi_bank[28].bank              |    <0.001 |
+|       multi_bank[29].bank              |    <0.001 |
+|       multi_bank[2].bank               |    <0.001 |
+|       multi_bank[30].bank              |    <0.001 |
+|       multi_bank[31].bank              |    <0.001 |
+|       multi_bank[32].bank              |    <0.001 |
+|       multi_bank[33].bank              |    <0.001 |
+|       multi_bank[34].bank              |    <0.001 |
+|       multi_bank[35].bank              |    <0.001 |
+|       multi_bank[36].bank              |    <0.001 |
+|       multi_bank[37].bank              |    <0.001 |
+|       multi_bank[38].bank              |    <0.001 |
+|       multi_bank[39].bank              |    <0.001 |
+|       multi_bank[3].bank               |    <0.001 |
+|       multi_bank[40].bank              |    <0.001 |
+|       multi_bank[41].bank              |    <0.001 |
+|       multi_bank[42].bank              |    <0.001 |
+|       multi_bank[43].bank              |    <0.001 |
+|       multi_bank[44].bank              |    <0.001 |
+|       multi_bank[45].bank              |    <0.001 |
+|       multi_bank[46].bank              |    <0.001 |
+|       multi_bank[47].bank              |    <0.001 |
+|       multi_bank[48].bank              |    <0.001 |
+|       multi_bank[49].bank              |    <0.001 |
+|       multi_bank[4].bank               |    <0.001 |
+|       multi_bank[50].bank              |    <0.001 |
+|       multi_bank[51].bank              |    <0.001 |
+|       multi_bank[52].bank              |    <0.001 |
+|       multi_bank[53].bank              |    <0.001 |
+|       multi_bank[54].bank              |    <0.001 |
+|       multi_bank[55].bank              |    <0.001 |
+|       multi_bank[56].bank              |    <0.001 |
+|       multi_bank[57].bank              |    <0.001 |
+|       multi_bank[58].bank              |    <0.001 |
+|       multi_bank[59].bank              |    <0.001 |
+|       multi_bank[5].bank               |    <0.001 |
+|       multi_bank[60].bank              |    <0.001 |
+|       multi_bank[61].bank              |    <0.001 |
+|       multi_bank[62].bank              |    <0.001 |
+|       multi_bank[63].bank              |    <0.001 |
+|       multi_bank[6].bank               |    <0.001 |
+|       multi_bank[7].bank               |    <0.001 |
+|       multi_bank[8].bank               |    <0.001 |
+|       multi_bank[9].bank               |    <0.001 |
+|     MTic.Inst_IP_Tic                   |    <0.001 |
+|       Tic_count                        |    <0.001 |
+|     Mmul16.Inst_IP_mul16               |    <0.001 |
+|       mul_x                            |    <0.001 |
+|         U0                             |    <0.001 |
+|           i_mult                       |    <0.001 |
+|             gLUT.gLUT_speed.iLUT       |    <0.001 |
+|       mul_y                            |    <0.001 |
+|         U0                             |    <0.001 |
+|           i_mult                       |    <0.001 |
+|             gLUT.gLUT_speed.iLUT       |    <0.001 |
+|     Mrdm.Inst_IP_Rdm                   |    <0.001 |
+|       inst_random                      |    <0.001 |
+|     Mwaitbtn.Inst_IPwaitBt             |    <0.001 |
+|       BufO_reg                         |    <0.001 |
+|       pls0                             |    <0.001 |
+|       pls1                             |    <0.001 |
+|       pls2                             |    <0.001 |
+|       pls3                             |    <0.001 |
+|       pls4                             |    <0.001 |
+|     Stack_Master                       |    <0.001 |
+|       R0                               |    <0.001 |
+|       R1                               |    <0.001 |
+|       R2                               |    <0.001 |
+|       R3                               |    <0.001 |
+|       update_counter                   |    <0.001 |
+|     inst_FinBoucle                     |    <0.001 |
+|     rst_mem                            |    <0.001 |
++----------------------------------------+-----------+
+
+

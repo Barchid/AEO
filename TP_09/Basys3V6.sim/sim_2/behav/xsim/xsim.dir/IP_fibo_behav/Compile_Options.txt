@@ -1,0 +1,1 @@
+-wto "5aa5c1fd80664393b166ba088d358cd5" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "IP_fibo_behav" "xil_defaultlib.IP_fibo" -log "elaborate.log" 

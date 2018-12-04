@@ -1,0 +1,110 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
+| Date         : Tue Nov 27 17:52:42 2018
+| Host         : a14p4 running 64-bit Ubuntu 18.04.1 LTS
+| Command      : report_control_sets -verbose -file Basys3V6_control_sets_placed.rpt
+| Design       : Basys3V6
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    42 |
+| Unused register locations in slices containing registers |    42 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            5 |
+|     10 |            1 |
+|     12 |            2 |
+|     14 |            1 |
+|    16+ |           33 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            8310 |         1180 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             120 |           19 |
+| Yes          | No                    | No                     |             530 |          107 |
+| Yes          | No                    | Yes                    |              30 |            2 |
+| Yes          | Yes                   | No                     |             344 |          100 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+------------------------------------------------------------+----------------------------------------------------+------------------+----------------+
+|              Clock Signal             |                        Enable Signal                       |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++---------------------------------------+------------------------------------------------------------+----------------------------------------------------+------------------+----------------+
+|  UART_Wrapper/uart_baudClock_inst/CLK | UART_Wrapper/Inst_uart_rx/rx_cnt[3]_i_1_n_0                |                                                    |                2 |              8 |
+|  UART_Wrapper/uart_baudClock_inst/CLK | UART_Wrapper/Inst_uart_rx/rx_busy_reg_n_0                  | UART_Wrapper/Inst_uart_rx/rx_sample_cnt[3]_i_1_n_0 |                1 |              8 |
+| ~clk_gen/inst/clk_out2                | my_Master/HCU_Master/Inst_returnstack/stack_ptr[3]_i_1_n_0 |                                                    |                2 |              8 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/inslocal[14]_i_1_n_0                  |                                                    |                1 |              8 |
+|  clk_gen/inst/clk_out2                | My_arbitre/FSM_sequential_state[3]_i_1_n_0                 | reset                                              |                2 |              8 |
+|  UART_Wrapper/uart_baudClock_inst/CLK |                                                            |                                                    |                2 |             10 |
+|  clk_gen/inst/clk_out1                | My_E190/E[0]                                               |                                                    |                2 |             12 |
+|  clk_gen/inst/clk_out2                |                                                            | my_Master/HCU_Master/SR[0]                         |                2 |             12 |
+|  clk_gen/inst/clk_out2                | UART_Wrapper/Inst_uart_dispatch/nextbit[6]_i_2_n_0         | UART_Wrapper/Inst_uart_dispatch/nextbit[6]_i_1_n_0 |                3 |             14 |
+|  clk_gen/inst/clk_out2                | UART_Wrapper/pulse_shift/E[4]                              |                                                    |                3 |             16 |
+|  clk_gen/inst/clk_out2                | UART_Wrapper/pulse_shift/E[3]                              |                                                    |                1 |             16 |
+|  clk_gen/inst/clk_out2                | UART_Wrapper/pulse_shift/E[2]                              |                                                    |                2 |             16 |
+|  clk_gen/inst/clk_out2                | UART_Wrapper/pulse_shift/E[0]                              |                                                    |                2 |             16 |
+|  clk_gen/inst/clk_out2                | UART_Wrapper/pulse_shift/E[1]                              |                                                    |                3 |             16 |
+|  clk_gen/inst/clk_out2                | UART_Wrapper/Inst_uart_rx/pulse_shift/E[0]                 |                                                    |                2 |             16 |
+|  clk_gen/inst/clk_out2                | UART_Wrapper/Inst_uart_dispatch/buf64[7]_i_1_n_0           |                                                    |                2 |             16 |
+|  clk_gen/inst/clk_out2                | UART_Wrapper/Inst_uart_dispatch/buf64[39]_i_1_n_0          |                                                    |                2 |             16 |
+|  clk_gen/inst/clk_out2                | UART_Wrapper/Inst_uart_dispatch/buf64[23]_i_1_n_0          |                                                    |                3 |             16 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/p_5_in                                | my_Master/HCU_Master/Ipcode[10]_i_1_n_0            |                4 |             22 |
+|  clk_gen/inst/clk_out1                |                                                            | UART_Wrapper/uart_baudClock_inst/count             |                3 |             22 |
+|  clk_gen/inst/clk_out2                |                                                            | reset                                              |                6 |             22 |
+|  clk_gen/inst/clk_out2                | UART_Wrapper/Inst_uart_dispatch/master_W                   | my_Master/rst_mem/resetmem                         |                3 |             24 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/PC_ret[11]_i_1_n_0                    |                                                    |                3 |             24 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/p_5_in                                | my_Master/HCU_Master/Tlit[11]_i_1_n_0              |                6 |             24 |
+|  clk_gen/inst/clk_out1                | My_E190/E[0]                                               | reset                                              |                2 |             30 |
+| ~clk_gen/inst/clk_out2                | my_Master/HCU_Master/q_reg[15][0]                          | reset                                              |                6 |             32 |
+| ~clk_gen/inst/clk_out2                | my_Master/HCU_Master/Inst_returnstack/p_0_in               |                                                    |                2 |             32 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/PC_adr                                | reset                                              |               11 |             40 |
+|  clk_gen/inst/clk_out1                |                                                            |                                                    |                8 |             42 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/we1                                   |                                                    |                8 |             64 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/we2                                   |                                                    |                8 |             64 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/we3                                   |                                                    |                8 |             64 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/E[0]                                  |                                                    |               21 |             64 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/q_reg[0][0]                           |                                                    |               19 |             64 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/q_reg[0]_6[0]                         |                                                    |               11 |             64 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/q_reg[0]_7[0]                         |                                                    |                9 |             64 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/we                                    |                                                    |                8 |             64 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/r_reg[0]_0                            | reset                                              |               14 |             64 |
+|  clk_gen/inst/clk_out2                |                                                            | my_Master/HCU_Master/clr                           |                8 |             64 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/p_5_in                                |                                                    |               17 |             70 |
+|  clk_gen/inst/clk_out2                | my_Master/HCU_Master/p_5_in                                | my_Master/HCU_Master/wr_adr[5]_i_1_n_0             |               50 |            108 |
+|  clk_gen/inst/clk_out2                |                                                            |                                                    |             1170 |           8258 |
++---------------------------------------+------------------------------------------------------------+----------------------------------------------------+------------------+----------------+
+
+

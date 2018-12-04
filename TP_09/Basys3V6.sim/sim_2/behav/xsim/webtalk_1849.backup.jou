@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Tue Dec  4 18:44:19 2018
+# Process ID: 1849
+# Current directory: /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.sim/sim_2/behav/xsim
+# Command line: wbtcv -mode batch -source /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.sim/sim_2/behav/xsim/xsim.dir/IP_fibo_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.sim/sim_2/behav/xsim/webtalk.log
+# Journal file: /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.sim/sim_2/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.sim/sim_2/behav/xsim/xsim.dir/IP_fibo_behav/webtalk/xsim_webtalk.tcl -notrace
