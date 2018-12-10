@@ -1,55 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1543937450">
-  <File Type="PA-TCL" Name="Basys3V6.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Basys3V6_bus_skew_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="Basys3V6_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Basys3V6_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="Basys3V6_opt.dcp"/>
-  <File Type="OPT-DRC" Name="Basys3V6_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="Basys3V6.hwdef"/>
-  <File Type="PWROPT-DCP" Name="Basys3V6_pwropt.dcp"/>
-  <File Type="PLACE-DCP" Name="Basys3V6_placed.dcp"/>
-  <File Type="PLACE-IO" Name="Basys3V6_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="Basys3V6_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Basys3V6_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="Basys3V6_control_sets_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Basys3V6_incremental_reuse_pre_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Basys3V6_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="Basys3V6_physopt.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Basys3V6_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="Basys3V6_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Basys3V6_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="Basys3V6_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="Basys3V6_drc_routed.pb"/>
-  <File Type="BG-BIT" Name="Basys3V6.bit"/>
-  <File Type="ROUTE-STATUS-PB" Name="Basys3V6_route_status.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Basys3V6_methodology_drc_routed.rpt"/>
-  <File Type="BG-BIN" Name="Basys3V6.bin"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Basys3V6_timing_summary_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="Basys3V6.msk"/>
-  <File Type="ROUTE-TIMING-PB" Name="Basys3V6_timing_summary_routed.pb"/>
-  <File Type="BITSTR-RBT" Name="Basys3V6.rbt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Basys3V6_timing_summary_routed.rpx"/>
-  <File Type="BITSTR-NKY" Name="Basys3V6.nky"/>
-  <File Type="BITSTR-BMM" Name="Basys3V6_bd.bmm"/>
-  <File Type="ROUTE-CLK" Name="Basys3V6_clock_utilization_routed.rpt"/>
-  <File Type="BG-DRC" Name="Basys3V6.drc"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Basys3V6_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="Basys3V6.mmi"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Basys3V6_bus_skew_routed.rpt"/>
+<GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1544438140">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="Basys3V6.drc"/>
   <File Type="BG-BGN" Name="Basys3V6.bgn"/>
   <File Type="BITSTR-SYSDEF" Name="Basys3V6.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="Basys3V6.ltx"/>
+  <File Type="BITSTR-MMI" Name="Basys3V6.mmi"/>
+  <File Type="BITSTR-BMM" Name="Basys3V6_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="Basys3V6.nky"/>
+  <File Type="BITSTR-RBT" Name="Basys3V6.rbt"/>
+  <File Type="BITSTR-MSK" Name="Basys3V6.msk"/>
+  <File Type="BG-BIN" Name="Basys3V6.bin"/>
+  <File Type="BG-BIT" Name="Basys3V6.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Basys3V6_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Basys3V6_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Basys3V6_bus_skew_postroute_physopted.rpt"/>
   <File Type="RDI-RDI" Name="Basys3V6.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Basys3V6_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Basys3V6_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Basys3V6_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Basys3V6_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Basys3V6_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Basys3V6_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Basys3V6_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="Basys3V6_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Basys3V6_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="Basys3V6_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Basys3V6_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Basys3V6_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="Basys3V6_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="Basys3V6_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="Basys3V6_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR" Name="Basys3V6_power_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Basys3V6_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Basys3V6_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Basys3V6_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-RPX" Name="Basys3V6_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="Basys3V6_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="Basys3V6_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Basys3V6_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="Basys3V6_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Basys3V6_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="Basys3V6_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="Basys3V6_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Basys3V6_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Basys3V6_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Basys3V6_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="Basys3V6_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Basys3V6_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Basys3V6_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="Basys3V6_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Basys3V6_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="Basys3V6_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Basys3V6_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="Basys3V6_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="Basys3V6_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="Basys3V6_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Basys3V6_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Basys3V6_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="Basys3V6_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Basys3V6.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Basys3V6_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="Basys3V6_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Basys3V6_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="Basys3V6_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Basys3V6_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="Basys3V6_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Basys3V6_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="Basys3V6.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/nexys3V6_vhdl/BaudClk_adept.vhd">
@@ -418,6 +437,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/fibogen.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
@@ -695,7 +720,6 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="Basys3V6"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -726,7 +750,7 @@
       <Option Id="VerboseBool">1</Option>
     </Step>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="timer"/>
   <BlockFileSet Type="BlockSrcs" Name="my_ram"/>
   <BlockFileSet Type="BlockSrcs" Name="multiply"/>
+  <BlockFileSet Type="BlockSrcs" Name="timer"/>
 </GenRun>

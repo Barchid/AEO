@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="multiply_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542706750">
-  <File Type="RDS-UTIL-PB" Name="multiply_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="multiply_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="multiply_utilization_synth.pb"/>
   <File Type="RDS-RDS" Name="multiply.vds"/>
   <File Type="RDS-DCP" Name="multiply.dcp"/>
   <File Type="PA-TCL" Name="multiply.tcl"/>

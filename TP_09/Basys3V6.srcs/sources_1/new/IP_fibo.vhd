@@ -44,7 +44,7 @@ begin
    begin
       if (rising_edge(clk)) then
          if (reset = '1') then
-            compteur <= x"00";
+            compteur <= (others => '0');
             state <= IDLE;
          else
             compteur <= compteur_i;
@@ -56,13 +56,14 @@ begin
 
    OUTPUT_DECODE: process (state, compteur)
    begin
-      if state = IDLE then
-         init <= '1';
-         compteur_i <= Tin(7 downto 0);
-      else
-         init <= '0';
-         compteur_i <= compteur - x"01";
-      end if;
+   case (state) is
+        when IDLE =>
+            init <= '1';
+            compteur_i <= Tin(7 downto 0);
+        when others => 
+            init <= '0';
+            compteur_i <= compteur - x"01";
+        end case;
    end process;
 
    NEXT_STATE_DECODE: process (state, Ipcode, compteur)
@@ -83,5 +84,6 @@ begin
    end process;
    
    Tout <= fibobus when done = '1' else (others => 'Z');
+   IPdone <= done;
 
 end Behavioral;

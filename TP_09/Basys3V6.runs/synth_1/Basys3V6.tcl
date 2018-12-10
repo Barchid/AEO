@@ -78,6 +78,7 @@ read_vhdl -library xil_defaultlib {
   /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/constant32.vhd
   /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/debounce4.vhd
   /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/dstack.vhd
+  /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.srcs/sources_1/new/fibogen.vhd
   /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mem_bank_1bit.vhd
   /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/mysr8ce.vhd
   /home/m1/barchid/Desktop/AEO/TP_09/Basys3V6.srcs/sources_1/imports/nexys3V6_vhdl/netring.vhd

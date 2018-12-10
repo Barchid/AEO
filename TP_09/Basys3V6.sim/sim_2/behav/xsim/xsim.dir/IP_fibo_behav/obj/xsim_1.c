@@ -47,16 +47,17 @@ extern void execute_35(char*, char *);
 extern void execute_36(char*, char *);
 extern void execute_37(char*, char *);
 extern void execute_38(char*, char *);
+extern void execute_39(char*, char *);
 extern void execute_33(char*, char *);
 extern void execute_34(char*, char *);
 extern void transaction_0(char*, char*, unsigned, unsigned, unsigned);
 extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-funcp funcTab[8] = {(funcp)execute_35, (funcp)execute_36, (funcp)execute_37, (funcp)execute_38, (funcp)execute_33, (funcp)execute_34, (funcp)transaction_0, (funcp)vhdl_transfunc_eventcallback};
-const int NumRelocateId= 8;
+funcp funcTab[9] = {(funcp)execute_35, (funcp)execute_36, (funcp)execute_37, (funcp)execute_38, (funcp)execute_39, (funcp)execute_33, (funcp)execute_34, (funcp)transaction_0, (funcp)vhdl_transfunc_eventcallback};
+const int NumRelocateId= 9;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/IP_fibo_behav/xsim.reloc",  (void **)funcTab, 8);
+	iki_relocate(dp, "xsim.dir/IP_fibo_behav/xsim.reloc",  (void **)funcTab, 9);
 	iki_vhdl_file_variable_register(dp + 4936);
 	iki_vhdl_file_variable_register(dp + 4992);
 

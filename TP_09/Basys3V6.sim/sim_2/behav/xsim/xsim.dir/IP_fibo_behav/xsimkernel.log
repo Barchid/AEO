@@ -1,7 +1,7 @@
-Running: xsim.dir/IP_fibo_behav/xsimk -simmode gui -wdb IP_fibo_behav.wdb -simrunnum 0 -socket 46197
+Running: xsim.dir/IP_fibo_behav/xsimk -simmode gui -wdb IP_fibo_behav.wdb -simrunnum 0 -socket 38447
 Design successfully loaded
 Design Loading Memory Usage: 43160 KB (Peak: 43212 KB)
 Design Loading CPU Usage: 20 ms
 Simulation completed
-Simulation Memory Usage: 133096 KB (Peak: 190432 KB)
-Simulation CPU Usage: 30 ms
+Simulation Memory Usage: 134076 KB (Peak: 190432 KB)
+Simulation CPU Usage: 60 ms

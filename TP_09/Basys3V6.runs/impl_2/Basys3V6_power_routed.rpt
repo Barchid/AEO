@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date             : Tue Dec  4 16:34:08 2018
-| Host             : a14p3 running 64-bit Ubuntu 18.04.1 LTS
+| Date             : Mon Dec 10 11:38:54 2018
+| Host             : a13p5 running 64-bit Ubuntu 18.04.1 LTS
 | Command          : report_power -file Basys3V6_power_routed.rpt -pb Basys3V6_power_summary_routed.pb -rpx Basys3V6_power_routed.rpx
 | Design           : Basys3V6
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.201        |
+| Total On-Chip Power (W)  | 0.206        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.129        |
+| Dynamic (W)              | 0.134        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.0         |
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.014 |       10 |       --- |             --- |
-| Slice Logic              |     0.004 |    15632 |       --- |             --- |
-|   LUT as Logic           |     0.004 |     7893 |     20800 |           37.95 |
-|   Register               |    <0.001 |     4999 |     41600 |           12.02 |
-|   CARRY4                 |    <0.001 |      156 |      8150 |            1.91 |
-|   F7/F8 Muxes            |    <0.001 |     1196 |     32600 |            3.67 |
+| Clocks                   |     0.015 |       10 |       --- |             --- |
+| Slice Logic              |     0.005 |    15777 |       --- |             --- |
+|   LUT as Logic           |     0.004 |     7954 |     20800 |           38.24 |
 |   LUT as Distributed RAM |    <0.001 |      672 |      9600 |            7.00 |
-|   Others                 |     0.000 |      234 |       --- |             --- |
-| Signals                  |     0.004 |     8472 |       --- |             --- |
+|   CARRY4                 |    <0.001 |      164 |      8150 |            2.01 |
+|   Register               |    <0.001 |     5070 |     41600 |           12.19 |
+|   F7/F8 Muxes            |    <0.001 |     1196 |     32600 |            3.67 |
+|   Others                 |     0.000 |      237 |       --- |             --- |
+| Signals                  |     0.007 |     8574 |       --- |             --- |
 | MMCM                     |     0.106 |        1 |         5 |           20.00 |
 | I/O                      |    <0.001 |       50 |       106 |           47.17 |
 | Static Power             |     0.072 |          |           |                 |
-| Total                    |     0.201 |          |           |                 |
+| Total                    |     0.206 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.033 |       0.023 |      0.010 |
+| Vccint    |       1.000 |     0.037 |       0.028 |      0.010 |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -150,7 +150,7 @@ Table of Contents
 +---------------------------------------+-----------+
 | Name                                  | Power (W) |
 +---------------------------------------+-----------+
-| Basys3V6                              |     0.129 |
+| Basys3V6                              |     0.134 |
 |   D7seg_display                       |    <0.001 |
 |   Inst_debounce4                      |    <0.001 |
 |   My_E190                             |    <0.001 |
@@ -164,7 +164,7 @@ Table of Contents
 |     uart_baudClock_inst               |    <0.001 |
 |   clk_gen                             |     0.107 |
 |     inst                              |     0.107 |
-|   my_Master                           |     0.020 |
+|   my_Master                           |     0.025 |
 |     BufLed_reg                        |    <0.001 |
 |     BufO_reg                          |    <0.001 |
 |     BufSwitch_reg                     |    <0.001 |
@@ -238,11 +238,11 @@ Table of Contents
 |       multi_bank[7].bank              |    <0.001 |
 |       multi_bank[8].bank              |    <0.001 |
 |       multi_bank[9].bank              |    <0.001 |
-|     MRAM.Inst_IPRAM                   |     0.001 |
-|       RAM                             |     0.001 |
-|         U0                            |     0.001 |
-|           synth_options.dist_mem_inst |     0.001 |
-|             gen_sp_ram.spram_inst     |     0.001 |
+|     MRAM.Inst_IPRAM                   |     0.002 |
+|       RAM                             |     0.002 |
+|         U0                            |     0.002 |
+|           synth_options.dist_mem_inst |     0.002 |
+|             gen_sp_ram.spram_inst     |     0.002 |
 |               ram_reg_0_255_0_0       |    <0.001 |
 |               ram_reg_0_255_10_10     |    <0.001 |
 |               ram_reg_0_255_11_11     |    <0.001 |
@@ -383,6 +383,8 @@ Table of Contents
 |         RAM_reg_0_15_30_31            |    <0.001 |
 |         RAM_reg_0_15_6_11             |    <0.001 |
 |     Mdelay.Inst_IP_delay              |    <0.001 |
+|     Mfibo.Inst_IPfibo                 |    <0.001 |
+|       inst_fibogen                    |    <0.001 |
 |     Mmul16.Inst_IP_mul16              |    <0.001 |
 |       my_mul16                        |    <0.001 |
 |         U0                            |    <0.001 |
@@ -405,7 +407,7 @@ Table of Contents
 |       pls2                            |    <0.001 |
 |       pls3                            |    <0.001 |
 |       pls4                            |    <0.001 |
-|     Stack_Master                      |     0.001 |
+|     Stack_Master                      |     0.005 |
 |       R0                              |    <0.001 |
 |       R1                              |    <0.001 |
 |       R2                              |    <0.001 |
@@ -542,7 +544,7 @@ Table of Contents
 |         ram_reg_0_15_7_7              |    <0.001 |
 |         ram_reg_0_15_8_8              |    <0.001 |
 |         ram_reg_0_15_9_9              |    <0.001 |
-|       update_counter                  |    <0.001 |
+|       update_counter                  |     0.004 |
 |     rst_mem                           |    <0.001 |
 +---------------------------------------+-----------+
 
